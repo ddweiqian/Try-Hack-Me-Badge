@@ -1,7 +1,7 @@
 # Try-Hack-Me-Badge
 
 ## Overview
-Try Hack Me journety with key takeaways, reflections, extentions.  
+Try Hack Me journey with key takeaways, reflections, extentions.  
 
 ## Extentions and Refererences for Cyber Threat Intelligence(CTI):
 
