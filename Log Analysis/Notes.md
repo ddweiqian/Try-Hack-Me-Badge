@@ -1,3 +1,4 @@
+The Essence of Data: logs
 Just as the rings in a tree reveal its life story—thicker rings for good years and thinner for challenging ones—a digital log documents the history of system activity. Both represent the fundamental principle of growth over time, serving as living records in their respective realms, whether physical or digital.
 
 In the digital domain, every interaction with a computer system—such as authentication attempts, authorization grants, file accesses, network connections, and system errors—creates a digital footprint in the form of logs.
