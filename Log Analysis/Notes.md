@@ -100,7 +100,7 @@ This foundational step ensures that a security analyst has a comprehensive data 
 
 1. Identify Sources: List all potential log sources, such as servers, databases, applications, and network devices.
 
-2. Choose a Log Collector: Select a log collector tool or software that aligns with your infrastructure, such as Rsyslog
+2. Choose a Log Collector: Select a log collector tool or software that aligns with your infrastructure, such as [rsyslog](https://www.rsyslog.com/doc/index.html)
 
 3. Configure Collection Parameters: Enable time synchronization through NTP to maintain accurate timelines, set parameters for which events to log and their intervals, and prioritize based on importance.
 
@@ -137,5 +137,7 @@ Here’s a streamlined process for achieving log centralization:
 4. Integrate with Incident Management: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
 
 
-## Pratical Activity: Log Collection with Rsyslog
-[How to Set Up Centralized Logging on Linux with Rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
+## Pratical Activity: Log Collection with rsyslog
+[How to Set Up Centralized Logging on Linux with rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
+[Centralized Log Collection Using Rsyslog](How to Set Up Centralized Logging on Linux with Rsyslog)
+
