@@ -212,31 +212,32 @@ Logs are not just records of past events; they serve as guiding compasses. They 
 
 ## Log Analysis Process
 
-Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like [Splunk](https://dev.splunk.com/enterprise/tutorials) and ELK to ad-hoc methods utilizing default command-line tools or open-source tools.
+Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like [Splunk](https://dev.splunk.com/enterprise/tutorials) and [ELK](https://logz.io/learn/complete-guide-elk-stack/) to ad-hoc methods utilizing default command-line tools or open-source tools.
 
 ### Data Sources
 Data sources refer to systems or applications configured to log system events or user activities using SIEM such as [Splunk](https://www.splunk.com/). These are the origins of logs.
 ([What is Splunk?](https://www.fortinet.com/resources/cyberglossary/what-is-splunk))
+
 ### Parsing
 Parsing breaks down log data into more manageable and understandable components. Given that logs come in various formats, it's essential to parse them to extract valuable information. Practically, parsing can be done through Using [Splunk Engine](https://dataedge.ie/product/splunk-analytics-engine/) or tools such as [log parser](http://www.logparser.com/)
 
 ### Normalization
-Normalization standardizes parsed data, bringing diverse log data into a consistent format. This process makes it easier to compare and analyze data from different sources, crucial in environments with multiple systems and applications. 
+Normalization standardizes parsed data, bringing diverse log data into a consistent format. This process makes it easier to compare and analyze data from different sources, crucial in environments with multiple systems and applications. This can also be done in SIEM, such as [Splunk](https://dev.splunk.com/enterprise/tutorials), in general.
 
 ### Sorting
-Sorting is vital for efficient data retrieval and pattern identification. Logs can be sorted by time, source, event type, severity, and other parameters, making it easier to identify trends and anomalies signaling operational issues or security incidents.
+Sorting is vital for efficient data retrieval and pattern identification. Logs can be sorted by time into chronological order, source, event type, severity, and other parameters, making it easier to identify trends and anomalies signaling operational issues or security incidents.
 
 ### Classification
-Classification assigns categories to logs based on their characteristics, allowing for quick filtering and focus on logs that matter most. This can be automated using machine learning to identify potential issues or threats efficiently.
+Classification assigns categories or labels to logs based on their characteristics, allowing for quick and easy filtering easily and focus on logs that matter most. This can be automated using machine learning to identify potential issues or threats efficiently. 
 
 ### Enrichment
 Log enrichment adds context to logs, making them more meaningful and easier to analyze. It could involve adding geographical data, user details, threat intelligence, or data from other sources to provide a complete picture of an event.
 
 ### Correlation
-Correlation links related records and identifies connections between log entries. This helps detect patterns and trends, making it easier to understand complex relationships between various log events.
+This is the most important step in log analysis. Correlation links related records from different sources and identifies connections between log entries based on on attributes of logs such as severity, IP address, URLs. This helps detect patterns and trends, making it easier to understand complex relationships between various log events.
 
 ### Visualization
-Visualization represents log data in graphical formats like charts, graphs, or heat maps, making it easier to recognize patterns, trends, and anomalies. Visualization tools provide an intuitive way to interpret large volumes of log data.
+Visualization represents log data in graphical formats like charts, graphs, or heat maps, making it easier to recognize patterns, trends, and anomalies through reading a story. Visualization tools provide an intuitive way to interpret large volumes of log data.
 
 ### Reporting
 Reporting summarizes log data into structured formats to provide insights, support decision-making, or meet compliance requirements. Effective reporting includes creating clear and concise log data summaries for stakeholders.
