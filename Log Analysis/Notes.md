@@ -139,5 +139,6 @@ Here’s a streamlined process for achieving log centralization:
 
 ## Pratical Activity: Log Collection with rsyslog
 [How to Set Up Centralized Logging on Linux with rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
+
 [Centralized Log Collection Using Rsyslog](How to Set Up Centralized Logging on Linux with Rsyslog)
 
