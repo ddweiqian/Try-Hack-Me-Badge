@@ -215,8 +215,8 @@ Logs are not just records of past events; they serve as guiding compasses. They 
 Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like Splunk and ELK to ad-hoc methods utilizing default command-line tools or open-source tools.
 
 ### Data Sources
-Data sources refer to systems or applications configured to log system events or user activities. These are the origins of logs.
-
+Data sources refer to systems or applications configured to log system events or user activities using SIEM such as [Splunk](https://www.splunk.com/). These are the origins of logs.
+[What is Splunk?](https://www.fortinet.com/resources/cyberglossary/what-is-splunk)
 ### Parsing
 Parsing breaks down log data into more manageable and understandable components. Given that logs come in various formats, it's essential to parse them to extract valuable information.
 
