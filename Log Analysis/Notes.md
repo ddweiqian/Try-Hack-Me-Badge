@@ -61,3 +61,28 @@ Web Server Logs: Capture requests processed by a web server, including URLs, res
 ### Importance of Log Analysis:
 
 Understanding these log types, their formats, and standards is crucial for effective log analysis. This knowledge allows analysts to efficiently parse, interpret, and derive insights from log data, aiding in troubleshooting, performance optimization, incident response, and threat hunting.
+
+## Log Standards
+
+A log standard consists of guidelines or specifications that dictate how logs should be generated, transmitted, and stored. These standards can include specific log formats and also cover various aspects of logging, such as the events to be logged, secure transmission methods, and retention periods.
+
+### Examples of Log Standards:
+
+[Common Event Expression (CEE)](https://cee.mitre.org/): Developed by MITRE, this standard provides a common structure for log data, making it easier to generate, transmit, store, and analyze logs.
+
+[OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html): A guide for developers on building application logging mechanisms, particularly for security logging.
+
+[Syslog Protocol](https://datatracker.ietf.org/doc/html/rfc5424): A standard for message logging that separates the software generating messages from the system storing them and the software reporting and analyzing them.
+
+[NIST Special Publication 800-92](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-92.pdf): Offers guidance on computer security log management.
+
+[Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs): Provides guidelines for log monitoring on Microsoft Azure.
+
+[Google Cloud Logging](https://cloud.google.com/logging/docs): Offers guidelines for logging on the Google Cloud Platform (GCP).
+
+[Oracle Cloud Infrastructure Logging](https://docs.oracle.com/en-us/iaas/Content/Logging/Concepts/loggingoverview.htm): Provides guidelines for logging on the Oracle Cloud Infrastructure (OCI).
+
+[Virginia Tech - Standard for Information Technology Logging](https://it.vt.edu/content/dam/it_vt_edu/policies/Standard_for_Information_Technology_Logging.pdf): A sample log review and compliance guideline.
+
+Understanding these standards is crucial for effective log management, ensuring that logs are consistently and securely handled across different systems and platforms.
+
