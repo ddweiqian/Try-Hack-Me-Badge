@@ -107,3 +107,31 @@ This foundational step ensures that a security analyst has a comprehensive data 
 4. Test Collection: Run a test to ensure logs are collected appropriately from all sources.
 
 By following these steps, people can ensure effective log collection and accurate log analysis.
+
+## Log Management
+
+Effective Log Management ensures that all collected logs are securely stored, systematically organized, and readily accessible. A hybrid approach, balancing comprehensive log retention with selective pruning, can provide an optimal solution.
+
+After gathering your logs, managing them effectively is crucial. Follow these steps to achieve this:
+
+1. Storage: Choose a secure storage solution, considering factors such as retention periods and accessibility.
+
+2. Organization: Classify logs by their source, type, or other criteria to facilitate easier access.
+
+3. Backup: Regularly back up your logs to prevent data loss.
+
+4. Review: Periodically review logs to ensure they are properly stored and categorized.
+
+## Log Centralization
+
+Centralization is essential for quick log access, thorough analysis, and rapid incident response. A unified system enables efficient log management with tools that offer real-time detection, automatic notifications, and seamless integration with incident management systems.
+
+Here’s a streamlined process for achieving log centralization:
+
+1. Choose a Centralized System: Opt for a platform that consolidates logs from all sources, such as the Elastic Stack or Splunk.
+
+2. Integrate Sources: Connect all your log sources to the centralized system.
+
+3. Set Up Monitoring: Use tools that provide real-time monitoring and alerts for specific events.
+
+4. Integrate with Incident Management: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
