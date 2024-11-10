@@ -97,26 +97,33 @@ A log format defines how data within a log file is structured and organized. It 
 These logs combine structured and unstructured data, with predictable components that allow for free-form text. Examples include:
 
 Syslog Message Format: A widely adopted logging protocol for system and network logs.
+![image](https://github.com/user-attachments/assets/0afe2ee4-d507-4c37-a739-d8939f673aae)
 
 Windows Event Log (EVTX) Format: Proprietary Microsoft log for Windows systems.
+![image](https://github.com/user-attachments/assets/cd14378f-86e4-44ee-995b-802f5983186a)
 
 ### Structured Logs: 
 
 Following a strict and standardised format, these logs are conducive to parsing and analysis. Typical structured log formats include:
 
 Field Delimited Formats: Comma-Separated Values (CSV) and Tab-Separated Values (TSV) are formats often used for tabular data.
+![image](https://github.com/user-attachments/assets/0566d498-591f-49bd-b23b-0facb7d85c61)
 
 JavaScript Object Notation (JSON): Known for its readability and compatibility with modern programming languages.
+![image](https://github.com/user-attachments/assets/aa99c531-c9aa-4f7d-834d-5e5d712a8496)
 
 W3C Extended Log Format (ELF): Defined by the World Wide Web Consortium (W3C), customizable for web server logging. It is typically used by Microsoft Internet Information Services (IIS) Web Server.
+![image](https://github.com/user-attachments/assets/1639d5d0-c306-401f-9a85-d539e924ef47)
 
 eXtensible Markup Language (XML): Flexible and customizable for creating standardized logging formats.
+![image](https://github.com/user-attachments/assets/1b5ea5fe-172a-4c9a-a948-116eb5a8e659)
 
 ### Unstructured Logs: 
 
 Comprising free-form text, these logs can be rich in context but may pose challenges in systematic parsing. Examples include:
 
 NCSA Common Log Format (CLF): A standardized web server log format for client requests. It is typically used by the Apache HTTP Server by default.
+![image](https://github.com/user-attachments/assets/372e8dec-6b81-4b12-8556-1a6b33896148)
 
 NCSA Combined Log Format (Combined): An extension of CLF, adding fields like referrer and user agent. It is typically used by Nginx HTTP Server by default.
 ![image](https://github.com/user-attachments/assets/e112b997-41a7-485a-a294-bc1653687edb)
