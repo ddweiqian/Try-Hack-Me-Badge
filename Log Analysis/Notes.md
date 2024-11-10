@@ -90,6 +90,39 @@ Understanding these standards is crucial for effective log management, ensuring 
 
 ## Log Formats
 
+A log format defines how data within a log file is structured and organized. It specifies the encoding method, the delimiters for each entry, and the fields included in each row. Log formats can vary significantly and generally fall into three main categories: Semi-structured, Structured, and Unstructured. Let's explore these categories with examples.
+
+### Semi-structured Logs
+
+These logs combine structured and unstructured data, with predictable components that allow for free-form text. Examples include:
+
+Syslog Message Format: A widely adopted logging protocol for system and network logs.
+
+Windows Event Log (EVTX) Format: Proprietary Microsoft log for Windows systems.
+
+### Structured Logs: 
+
+Following a strict and standardised format, these logs are conducive to parsing and analysis. Typical structured log formats include:
+
+Field Delimited Formats: Comma-Separated Values (CSV) and Tab-Separated Values (TSV) are formats often used for tabular data.
+
+JavaScript Object Notation (JSON): Known for its readability and compatibility with modern programming languages.
+
+W3C Extended Log Format (ELF): Defined by the World Wide Web Consortium (W3C), customizable for web server logging. It is typically used by Microsoft Internet Information Services (IIS) Web Server.
+
+eXtensible Markup Language (XML): Flexible and customizable for creating standardized logging formats.
+
+### Unstructured Logs: 
+
+Comprising free-form text, these logs can be rich in context but may pose challenges in systematic parsing. Examples include:
+
+NCSA Common Log Format (CLF): A standardized web server log format for client requests. It is typically used by the Apache HTTP Server by default.
+
+NCSA Combined Log Format (Combined): An extension of CLF, adding fields like referrer and user agent. It is typically used by Nginx HTTP Server by default.
+![image](https://github.com/user-attachments/assets/e112b997-41a7-485a-a294-bc1653687edb)
+
+
+
 # How Log I: Collection, Management, and Centralisation
 
 ## Log Collection
