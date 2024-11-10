@@ -86,3 +86,24 @@ A log standard consists of guidelines or specifications that dictate how logs sh
 
 Understanding these standards is crucial for effective log management, ensuring that logs are consistently and securely handled across different systems and platforms.
 
+## Log Formats
+
+# How Log: Collection, Management, and Centralisation
+
+## Log Collection
+
+Log collection is a crucial part of log analysis, involving the aggregation of logs from various sources like servers, network devices, software, and databases.
+
+To accurately reflect a chronological sequence of events, it's essential to maintain precise system time during logging. Using the Network Time Protocol (NTP) helps achieve this synchronization and ensures the integrity of the log timelines.
+
+This foundational step ensures that a security analyst has a comprehensive data set to review. Here's a simple step-by-step process, emphasizing the need to prioritize log collection based on significant information:
+
+1. Identify Sources: List all potential log sources, such as servers, databases, applications, and network devices.
+
+2. Choose a Log Collector: Select a log collector tool or software that aligns with your infrastructure, such as Rsyslog
+
+3. Configure Collection Parameters: Enable time synchronization through NTP to maintain accurate timelines, set parameters for which events to log and their intervals, and prioritize based on importance.
+
+4. Test Collection: Run a test to ensure logs are collected appropriately from all sources.
+
+By following these steps, people can ensure effective log collection and accurate log analysis.
