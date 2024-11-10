@@ -8,7 +8,7 @@ In the digital domain, every interaction with a computer system—such as authen
 ## Components of a Digital Log
 Logs record events within a system, providing a comprehensive account of activities. These can include user logins, file accesses, system errors, network connections, and changes to data or system configurations.
 
-<img src="https://github.com/user-attachments/assets/5d927f61-018d-4472-8bd3-5cd1e3992ce4" alt="Image description" width="300" height="200">
+<img src="https://github.com/user-attachments/assets/5d927f61-018d-4472-8bd3-5cd1e3992ce4" alt="Image description" width="500" height="500">
 
 Although the specifics may vary by log type, a typical log entry contains:
 
