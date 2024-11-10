@@ -205,3 +205,69 @@ Carefully delete logs to avoid removing valuable ones. Always back up crucial lo
 [A Complete Guide to Managing Log Files with Logrotate](https://betterstack.com/community/guides/logging/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04/)
 
 [How to manage log files using logrotate](https://www.datadoghq.com/blog/log-file-control-with-logrotate/)
+
+# Log Analysis : Process, tools, and techniques
+
+Logs are not just records of past events; they serve as guiding compasses. They are invaluable resources that, when effectively leveraged, can enhance system diagnostics, cybersecurity, and regulatory compliance. Their role in documenting historical activity for systems or applications is crucial.
+
+## Log Analysis Process
+
+Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like Splunk and ELK to ad-hoc methods utilizing default command-line tools or open-source tools.
+
+### Data Sources
+Data sources refer to systems or applications configured to log system events or user activities. These are the origins of logs.
+
+### Parsing
+Parsing breaks down log data into more manageable and understandable components. Given that logs come in various formats, it's essential to parse them to extract valuable information.
+
+### Normalization
+Normalization standardizes parsed data, bringing diverse log data into a consistent format. This process makes it easier to compare and analyze data from different sources, crucial in environments with multiple systems and applications.
+
+### Sorting
+Sorting is vital for efficient data retrieval and pattern identification. Logs can be sorted by time, source, event type, severity, and other parameters, making it easier to identify trends and anomalies signaling operational issues or security incidents.
+
+### Classification
+Classification assigns categories to logs based on their characteristics, allowing for quick filtering and focus on logs that matter most. This can be automated using machine learning to identify potential issues or threats efficiently.
+
+### Enrichment
+Log enrichment adds context to logs, making them more meaningful and easier to analyze. It could involve adding geographical data, user details, threat intelligence, or data from other sources to provide a complete picture of an event.
+
+### Correlation
+Correlation links related records and identifies connections between log entries. This helps detect patterns and trends, making it easier to understand complex relationships between various log events.
+
+### Visualization
+Visualization represents log data in graphical formats like charts, graphs, or heat maps, making it easier to recognize patterns, trends, and anomalies. Visualization tools provide an intuitive way to interpret large volumes of log data.
+
+### Reporting
+Reporting summarizes log data into structured formats to provide insights, support decision-making, or meet compliance requirements. Effective reporting includes creating clear and concise log data summaries for stakeholders.
+
+## Log Analysis Tools
+For complex log analysis tasks, Security Information and Event Management (SIEM) tools such as Splunk or Elastic Search are used. In scenarios requiring immediate data analysis, tools like cat, grep, sed, sort, uniq, and awk on Linux-based systems, and [EZ-Tools](https://ericzimmerman.github.io/#!index.md) and Get-FileHash on Windows-based systems, are valuable. Proper acquisition includes hashing log files during collection to ensure admissibility in court.
+
+## Log Analysis Techniques
+
+Log analysis techniques are methods used to interpret and derive insights from log data. They range from simple to complex and include:
+
+1. Pattern Recognition: Identifying recurring sequences or trends.
+
+2. Anomaly Detection: Spotting data points that deviate from the norm.
+
+3. Correlation Analysis: Understanding relationships between events.
+
+4. Timeline Analysis: Monitoring trends and behaviors over time.
+
+5. Machine Learning and AI: Enhancing log analysis techniques like classification and enrichment.
+
+6. Visualization: Using graphs and charts for intuitive data representation.
+
+7. Statistical Analysis: Applying quantitative methods for data-driven decisions.
+
+### Working with Logs: Usecase Application
+
+Handling logs requires both comprehension and data manipulation. This includes two approaches:
+
+Unparsed Raw Logs: Accessed directly via open-source [Log Viewer](https://github.com/sevdokimov/log-viewer) tools, suitable for quick inspections without preprocessing.
+
+Parsed and Consolidated Logs: Using Unix tools like cat, grep, sed, sort, uniq, and awk to create a standardized file, offering a clear and efficient data view through the [Log Viewer](https://github.com/sevdokimov/log-viewer) tool.
+
+These methods highlight the flexibility and importance of log analysis in system diagnostics and cybersecurity, ensuring the safety and efficiency of an organization.
