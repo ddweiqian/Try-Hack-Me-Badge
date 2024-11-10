@@ -35,7 +35,7 @@ A single log entry may seem minor on its own. However, when log data is aggregat
 
 6. What was the outcome of their actions?
 
-# What logs: Types, Formats and Standards
+# What logs : Types, Formats and Standards
 
 ## Log Types
 
@@ -88,7 +88,7 @@ Understanding these standards is crucial for effective log management, ensuring 
 
 ## Log Formats
 
-# How Log: Collection, Management, and Centralisation
+# How Log I: Collection, Management, and Centralisation
 
 ## Log Collection
 
@@ -142,3 +142,66 @@ Here’s a streamlined process for achieving log centralization:
 
 [Centralized Log Collection Using Rsyslog](https://medium.com/curious-dev-grail/centralized-log-collection-using-rsyslog-1be6d6e9747f)
 
+# How Log II: Storage, Retention, and Deletion
+
+## Log Storage
+
+Logs can be stored in various locations, such as the local system generating them, a centralized repository, or cloud-based storage.
+
+### Factors Influencing Log Storage Location:
+
+1. Security Requirements: Ensuring logs comply with organizational or regulatory security protocols.
+
+2. Accessibility Needs: How quickly and by whom the logs need to be accessed.
+
+3. Storage Capacity: The volume of logs generated may require significant storage space.
+
+4. Cost Considerations: Budget constraints may influence the choice between cloud-based or local solutions.
+
+5. Compliance Regulations: Industry-specific regulations governing log storage.
+
+6. Retention Policies: Required retention time and ease of retrieval.
+
+7. Disaster Recovery Plans: Ensuring log availability even in case of system failure.
+
+## Log Retention
+
+Recognizing that log storage is finite, it's crucial to balance retaining logs for potential future needs and storage costs. Understanding Hot, Warm, and Cold storage concepts aids in this decision-making:
+
+1. Hot Storage: Most accessible logs from the past 3-6 months, with near real-time query speeds.
+
+2. Warm Storage: Logs from six months to 2 years, acting as a data lake, easily accessible but not as immediate as Hot storage.
+
+3. Cold Storage: Archived or compressed logs from 2-5 years, not easily accessible and used for retroactive analysis or scoping.
+
+Managing log storage costs is critical for organizations, and selecting appropriate Hot, Warm, or Cold storage strategies can help keep these costs in check.
+
+## Log Deletion
+
+Carefully delete logs to avoid removing valuable ones. Always back up crucial log files before deletion.
+
+### Importance of a Well-Defined Deletion Policy:
+
+1. Maintain manageable log size for analysis.
+
+2. Comply with privacy regulations, such as GDPR, which require the deletion of unnecessary data.
+
+3. Keep storage costs balanced.
+
+### Best Practices: Log Storage, Retention, and Deletion
+
+1. Determine policies based on business needs and legal requirements.
+
+2. Regularly review and update guidelines as conditions and regulations change.
+
+3. Automate storage, retention, and deletion processes to ensure consistency and avoid human errors.
+
+4. Encrypt sensitive logs to protect data.
+
+5. Regular backups, especially before deletion.
+
+### Practical Activity: Log Management with logrotate
+
+[A Complete Guide to Managing Log Files with Logrotate](https://betterstack.com/community/guides/logging/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04/)
+
+[How to manage log files using logrotate](https://www.datadoghq.com/blog/log-file-control-with-logrotate/)
