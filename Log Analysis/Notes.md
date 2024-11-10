@@ -212,16 +212,16 @@ Logs are not just records of past events; they serve as guiding compasses. They 
 
 ## Log Analysis Process
 
-Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like Splunk and ELK to ad-hoc methods utilizing default command-line tools or open-source tools.
+Log analysis involves several steps: Parsing, Normalization, Sorting, Classification, Enrichment, Correlation, Visualization, and Reporting. This can be achieved using various tools and techniques, from complex systems like [Splunk](https://dev.splunk.com/enterprise/tutorials) and ELK to ad-hoc methods utilizing default command-line tools or open-source tools.
 
 ### Data Sources
 Data sources refer to systems or applications configured to log system events or user activities using SIEM such as [Splunk](https://www.splunk.com/). These are the origins of logs.
 ([What is Splunk?](https://www.fortinet.com/resources/cyberglossary/what-is-splunk))
 ### Parsing
-Parsing breaks down log data into more manageable and understandable components. Given that logs come in various formats, it's essential to parse them to extract valuable information.
+Parsing breaks down log data into more manageable and understandable components. Given that logs come in various formats, it's essential to parse them to extract valuable information. Practically, parsing can be done through Using [Splunk Engine](https://dataedge.ie/product/splunk-analytics-engine/) or tools such as [log parser](http://www.logparser.com/)
 
 ### Normalization
-Normalization standardizes parsed data, bringing diverse log data into a consistent format. This process makes it easier to compare and analyze data from different sources, crucial in environments with multiple systems and applications.
+Normalization standardizes parsed data, bringing diverse log data into a consistent format. This process makes it easier to compare and analyze data from different sources, crucial in environments with multiple systems and applications. 
 
 ### Sorting
 Sorting is vital for efficient data retrieval and pattern identification. Logs can be sorted by time, source, event type, severity, and other parameters, making it easier to identify trends and anomalies signaling operational issues or security incidents.
