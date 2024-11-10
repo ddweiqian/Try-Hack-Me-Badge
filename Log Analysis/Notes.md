@@ -137,7 +137,7 @@ Here’s a streamlined process for achieving log centralization:
 4. Integrate with Incident Management: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
 
 
-## Pratical Activity: Log Collection with rsyslog
+## Usecase Activity: Log Collection with rsyslog
 [How to Set Up Centralized Logging on Linux with rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
 
 [Centralized Log Collection Using Rsyslog](https://medium.com/curious-dev-grail/centralized-log-collection-using-rsyslog-1be6d6e9747f)
@@ -200,7 +200,7 @@ Carefully delete logs to avoid removing valuable ones. Always back up crucial lo
 
 5. Regular backups, especially before deletion.
 
-### Practical Activity: Log Management with logrotate
+### Usecase Activity: Log Management with logrotate
 
 [A Complete Guide to Managing Log Files with Logrotate](https://betterstack.com/community/guides/logging/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04/)
 
