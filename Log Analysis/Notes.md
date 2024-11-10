@@ -128,7 +128,7 @@ Centralization is essential for quick log access, thorough analysis, and rapid i
 
 Here’s a streamlined process for achieving log centralization:
 
-1. Choose a Centralized System: Opt for a platform that consolidates logs from all sources, such as the Elastic Stack or Splunk.
+1. Choose a Centralized System: Opt for a platform that consolidates logs from all sources using SIEM, such as the Elastic Stack or Splunk.
 
 2. Integrate Sources: Connect all your log sources to the centralized system.
 
