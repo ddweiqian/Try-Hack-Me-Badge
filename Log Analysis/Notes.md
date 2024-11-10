@@ -135,3 +135,7 @@ Here’s a streamlined process for achieving log centralization:
 3. Set Up Monitoring: Use tools that provide real-time monitoring and alerts for specific events.
 
 4. Integrate with Incident Management: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
+
+
+## Pratical Activity: Log Collection with Rsyslog
+[How to Set Up Centralized Logging on Linux with Rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
