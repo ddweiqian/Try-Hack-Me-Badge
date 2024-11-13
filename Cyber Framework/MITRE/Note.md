@@ -49,6 +49,6 @@ You can access the Navigator view when exploring a group or tool page by clickin
 
 You can visit [its repository](https://github.com/mitre-attack/attack-navigator/) for more about **MITRE ATT&CK® Navigator**
 
-Here is more about [ATT&CK Data & Tools](https://attack.mitre.org/resources/attack-data-and-tools/), including **Python Utilities** provided by ATT&CK.
+Apart from MITRE ATT&CK® Navigator, here is more about [ATT&CK Data & Tools](https://attack.mitre.org/resources/attack-data-and-tools/), including **Python Utilities** provided by ATT&CK.
 
 Learn more about **use case of MITRE ATT&CK** from its [CTI Training](https://attack.mitre.org/resources/learn-more-about-attack/training/cti/), including advanced topics such as **how to map intelligence generated from narrative reporting about an incident to ATT&CK**, so that to users can leverage threat intelligence and threat-informed defense.
