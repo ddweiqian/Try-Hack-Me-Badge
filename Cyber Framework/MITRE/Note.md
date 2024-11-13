@@ -39,3 +39,5 @@ The [ATT&CK®](https://attack.mitre.org/) framework is a comprehensive knowledge
 Over the years, the framework has expanded significantly. Originally focused on Windows, it now includes other platforms like macOS and Linux. The framework is continually enriched by contributions from security researchers and threat intelligence reports. It's a valuable tool for both blue teamers (defensive security) and red teamers (offensive security).
 
 For more detailed information, visit the [ATT&CK®](https://attack.mitre.org/) website.
+
+Please reference [this](https://www.techtarget.com/searchsecurity/definition/MITRE-ATTCK-framework) for more information about MITRE ATT&CK.
