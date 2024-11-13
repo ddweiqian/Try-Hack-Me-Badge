@@ -16,3 +16,18 @@ D3FEND (**D**etection, **D**enial, and **D**isruption **F**ramework **E**mpoweri
 
 AEP (**A**TT&CK **E**mulation **P**lans)
 
+# Basic Terminology
+
+Let's take a moment to go over some common terms you'll encounter when dealing with frameworks and threat intelligence.
+
+**APT** stands for **Advanced Persistent Threat**. This term refers to a team, group, or even a nation-state that conducts prolonged attacks against organizations or countries. The word "advanced" might be misleading, suggesting that these groups possess some kind of super-weapon like a zero-day exploit. However, this is not the case. As we'll discuss later, the techniques used by APT groups are often quite common and can be detected with the proper measures in place. 
+
+An advanced persistent threat (APT) is a stealthy threat actor, typically a nation state or state-sponsored group, which gains unauthorized access to a computer network and remains undetected for an extended period.
+
+TTP stands for **Tactics, Techniques, and Procedures**. Here's what each term means:
+
+**Tactic**: The goal or objective of the adversary.
+
+**Technique**: The method the adversary uses to achieve the goal or objective.
+
+**Procedure**: The way the technique is carried out.
