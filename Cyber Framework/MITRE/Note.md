@@ -31,3 +31,11 @@ TTP stands for **Tactics, Techniques, and Procedures**. Here's what each term me
 **Technique**: The method the adversary uses to achieve the goal or objective.
 
 **Procedure**: The way the technique is carried out.
+
+# ATT&CK® Framework
+
+The [ATT&CK®](https://attack.mitre.org/) framework is a comprehensive knowledge base of adversary tactics and techniques that is globally accessible and based on real-world observations. It was created by MITRE in 2013 to document common TTPs (**Tactics, Techniques, and Procedures**) used by APT (**Advanced Persistent Threat**) groups targeting enterprise Windows networks. This initiative began with an internal project known as FMX (Fort Meade Experiment), where security professionals emulated adversarial TTPs on a network and collected data from the attacks. This data formed the foundation of the ATT&CK® framework.
+
+Over the years, the framework has expanded significantly. Originally focused on Windows, it now includes other platforms like macOS and Linux. The framework is continually enriched by contributions from security researchers and threat intelligence reports. It's a valuable tool for both blue teamers (defensive security) and red teamers (offensive security).
+
+For more detailed information, visit the [ATT&CK®](https://attack.mitre.org/) website.
