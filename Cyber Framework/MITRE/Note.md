@@ -47,4 +47,8 @@ Finally, the same data can be accessed through the **MITRE ATT&CK® Navigator**.
 You can access the Navigator view when exploring a group or tool page by clicking the ATT&CK® Navigator Layers button.
 ![image](https://github.com/user-attachments/assets/40527db0-50c9-4dca-9e75-89d5cbc18da2)
 
-You can visit [its repository](https://github.com/mitre-attack/attack-navigator/) for more about **MITRE ATT&CK® Navigato**
+You can visit [its repository](https://github.com/mitre-attack/attack-navigator/) for more about **MITRE ATT&CK® Navigator**
+
+Here is more about [ATT&CK Data & Tools](https://attack.mitre.org/resources/attack-data-and-tools/). 
+
+Learn more about **use case of MITRE ATT&CK** from its [CTI Training](https://attack.mitre.org/resources/learn-more-about-attack/training/cti/), including advanced topics such as how to map generated intelligence from report about an incident to ATT&CK, so that to use threat intelligence and Threat-Informed Defense.
