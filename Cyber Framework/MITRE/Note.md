@@ -79,5 +79,10 @@ In the Full Analytic List view, you can quickly identify which implementations a
 
 ![image](https://github.com/user-attachments/assets/b56e516b-d3e6-4eba-94d4-b27d20df318f)
 
+Let's look at another analytic to see a different implementation, [CAR-2014-11-004: Remote PowerShell Sessions](https://car.mitre.org/analytics/CAR-2014-11-004/).
 
+Under Implementations, a pseudocode is provided and an EQL version of the pseudocode. EQL (pronounced as 'equal'), and it's an acronym for Event Query Language. EQL can be utilized to query, parse, and organize Sysmon event data. You can read more about this [here](https://eql.readthedocs.io/en/latest/). 
+![image](https://github.com/user-attachments/assets/77534e9f-cb3c-409f-9821-fdc867796e57)
+
+To summarize, CAR is a great place for finding analytics that takes us further than the Mitigation and Detection summaries in the ATT&CK® framework. This tool is not a replacement for ATT&CK® but an added resource.
 
