@@ -47,3 +47,4 @@ Finally, the same data can be accessed through the **MITRE ATT&CK® Navigator**.
 You can access the Navigator view when exploring a group or tool page by clicking the ATT&CK® Navigator Layers button.
 ![image](https://github.com/user-attachments/assets/40527db0-50c9-4dca-9e75-89d5cbc18da2)
 
+You can visit [its repository]((https://github.com/mitre-attack/attack-navigator/) ) for more about **MITRE ATT&CK® Navigato**
