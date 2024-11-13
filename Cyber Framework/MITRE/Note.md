@@ -51,4 +51,4 @@ You can visit [its repository](https://github.com/mitre-attack/attack-navigator/
 
 Here is more about [ATT&CK Data & Tools](https://attack.mitre.org/resources/attack-data-and-tools/), including **Python Utilities** provided by ATT&CK.
 
-Learn more about **use case of MITRE ATT&CK** from its [CTI Training](https://attack.mitre.org/resources/learn-more-about-attack/training/cti/), including advanced topics such as **how to map generated intelligence from narrative reporting about an incident to ATT&CK**, so that to users can leverage threat intelligence and threat-informed defense.
+Learn more about **use case of MITRE ATT&CK** from its [CTI Training](https://attack.mitre.org/resources/learn-more-about-attack/training/cti/), including advanced topics such as **how to map intelligence generated from narrative reporting about an incident to ATT&CK**, so that to users can leverage threat intelligence and threat-informed defense.
