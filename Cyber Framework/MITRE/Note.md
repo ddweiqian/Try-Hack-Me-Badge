@@ -52,3 +52,32 @@ You can visit [its repository](https://github.com/mitre-attack/attack-navigator/
 Apart from MITRE ATT&CK® Navigator, here is more about [ATT&CK Data & Tools](https://attack.mitre.org/resources/attack-data-and-tools/), including **Python Utilities** provided by ATT&CK.
 
 Learn more about **use case of MITRE ATT&CK** from its [CTI Training](https://attack.mitre.org/resources/learn-more-about-attack/training/cti/), including advanced topics such as **how to map intelligence generated from narrative reporting about an incident to ATT&CK**, so that to users can leverage threat intelligence and threat-informed defense.
+
+# CAR Knowledge Base
+
+[Cyber Analytics Repository](https://car.mitre.org/)
+
+The official definition of CAR is *"The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by MITRE based on the MITRE ATT&CK® adversary model. CAR defines a data model that is leveraged in its pseudocode representations but also includes implementations directly targeted at specific tools (e.g., Splunk, EQL) in its analytics. With respect to coverage, CAR is focused on providing a set of validated and well-explained analytics, in particular with regards to their operating theory and rationale."*
+
+Rather than continuing to explain what CAR (Cyber Analytics Repository) is, let's jump right in. With the knowledge we've gained from the previous section, we should now be ready to understand the information that CAR provides.
+
+Let's start by examining [CAR-2013-10-001](https://car.mitre.org/analytics/CAR-2013-10-001/): User Login Activity Monitoring.
+
+When you visit the page, you'll find a brief description of the analytics along with references to ATT&CK, including the related **technique, sub-technique**, and **tactic**.
+
+![image](https://github.com/user-attachments/assets/6446635d-deb4-44eb-8117-9da73f2cb59b)
+
+We are also given pseudocode and a query to search for this specific analytic in Splunk. Pseudocode is a straightforward, human-readable description of a set of instructions or algorithms that a program or system will execute.
+
+![image](https://github.com/user-attachments/assets/51590591-7f96-4797-affe-d9dafdf381d1)
+
+To take full advantage of CAR, we can view the [Full Analytic List](https://car.mitre.org/analytics/) or the [CAR ATT&CK® Navigator layer](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/mitre-attack/car/master/docs/coverage/car_analytic_coverage_04_05_2022.json) to view all the analytics.
+
+![image](https://github.com/user-attachments/assets/0fb7d64b-e47a-4ac5-b568-69be4ed93f72)
+
+In the Full Analytic List view, you can quickly identify which implementations are available for each analytic and see the applicable OS platform at a glance.
+
+![image](https://github.com/user-attachments/assets/b56e516b-d3e6-4eba-94d4-b27d20df318f)
+
+
+
