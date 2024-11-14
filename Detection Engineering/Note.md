@@ -94,3 +94,5 @@ Detection as Code offers several advantages:
 3. **Team Collaboration**: CI/CD workflows reduce isolation between security teams and promote collaboration through the coding process.
 
 4. **Code Reusability**: As detection patterns develop, engineers can reuse code for similar functions across different detections, accelerating the detection process by avoiding the need to start from scratch.
+
+![image](https://github.com/user-attachments/assets/612e06aa-7ee5-4848-908d-753cfbc22063)
