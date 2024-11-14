@@ -136,3 +136,11 @@ As part of the Detection Engineering module, we'll explore Sigma, a generic sign
 ## Deployment, Automation & Tuning
 
 Tested detection rules must be deployed in a live environment for assessment. Over time, these detections need to be modified and updated to account for changes in attack vectors, patterns, or the environment. This process improves the quality of detections and encourages continuous refinement.
+
+# Detection Engineering Frameworks 1
+
+MITRE’s ATT&CK and CAR Frameworks
+
+Pyramid of Pain
+
+Cyber Kill Chain
