@@ -159,22 +159,22 @@ The ADS Framework follows a strict sequence that detection engineers must adhere
 
 3. **Strategy Abstract**: Provides an overview of how the detection strategy will function, detailing what the alert will look for, the data sources, enrichment resources, and ways to reduce false positives.
 
-4 **Technical Context**: Describes the technical environment for the detection, providing analysts and responders with all necessary information to understand the alert. This should align with the platforms and tools used for threat alerts.
+4. **Technical Context**: Describes the technical environment for the detection, providing analysts and responders with all necessary information to understand the alert. This should align with the platforms and tools used for threat alerts.
 
 5. **Blind Spots and Assumptions**: Identifies any potential issues where suspicious activities might not trigger the strategy. Clarifies how the ADS might fail or be bypassed.
 
-6 **False Positives**: Lists scenarios where alerts might be triggered by misconfigurations or benign activities, aiding in configuring SIEM to target only relevant threats.
+6. **False Positives**: Lists scenarios where alerts might be triggered by misconfigurations or benign activities, aiding in configuring SIEM to target only relevant threats.
 
 7. **Validation**: Details the steps required to produce a true-positive event that would trigger the alert. This is akin to a unit test, which could be a script or scenario used to generate an alert. Effective validation includes:
 
-Developing a plan for a true-positive outcome
+1) Developing a plan for a true-positive outcome
 
-Documenting the process
+2) Documenting the process
 
-Testing and triggering an alert in a controlled environment
+3) Testing and triggering an alert in a controlled environment
 
 Validating the strategy that triggered the alert
 
 8. **Priority**: Sets up the alerting levels with criteria for preferences, separate from the alerting levels shown through SIEM.
 
-9 **Response**: Provides guidance on how to triage and investigate a detection alert, helping analysts and responders prevent serious consequences.
+9. **Response**: Provides guidance on how to triage and investigate a detection alert, helping analysts and responders prevent serious consequences.
