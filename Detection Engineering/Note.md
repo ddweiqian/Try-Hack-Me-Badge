@@ -81,16 +81,16 @@ Detection as Code is an organized method for creating detection systems by using
 
 DaC introduces a code-centric workflow that integrates essential elements from Continuous Integration/Continuous Development (CI/CD) workflows, such as:
 
-**Version Control**: Many SIEMs and EDR products lack the ability to track changes to alerts and their definitions. Incorporating version control allows for quick review, testing, and accountability of detection rules and processes, leading to higher-quality detections.
+1. **Version Control**: Many SIEMs and EDR products lack the ability to track changes to alerts and their definitions. Incorporating version control allows for quick review, testing, and accountability of detection rules and processes, leading to higher-quality detections.
 
-**Automation Workflows**: Adopting CI/CD workflows facilitates automated detection testing, enabling swift transitions and production deployments.
+2. **Automation Workflows**: Adopting CI/CD workflows facilitates automated detection testing, enabling swift transitions and production deployments.
 
 Detection as Code offers several advantages:
 
-**Customizable and Flexible Detections**: Utilizing common languages for detections, like Sigma and YARA, allows DaC to be vendor-neutral and deployable across various SIEM, EDR, and XDR solutions.
+1. **Customizable and Flexible Detections**: Utilizing common languages for detections, like Sigma and YARA, allows DaC to be vendor-neutral and deployable across various SIEM, EDR, and XDR solutions.
 
-**Test-Driven Development**: Quality testing of detection code helps identify blind spots and false positives early in the process, enhancing detection effectiveness. This approach also improves detection quality and ensures thorough documentation.
+2. **Test-Driven Development**: Quality testing of detection code helps identify blind spots and false positives early in the process, enhancing detection effectiveness. This approach also improves detection quality and ensures thorough documentation.
 
-**Team Collaboration**: CI/CD workflows reduce isolation between security teams and promote collaboration through the coding process.
+3. **Team Collaboration**: CI/CD workflows reduce isolation between security teams and promote collaboration through the coding process.
 
-**Code Reusability**: As detection patterns develop, engineers can reuse code for similar functions across different detections, accelerating the detection process by avoiding the need to start from scratch.
+4. **Code Reusability**: As detection patterns develop, engineers can reuse code for similar functions across different detections, accelerating the detection process by avoiding the need to start from scratch.
