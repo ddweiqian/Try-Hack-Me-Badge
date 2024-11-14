@@ -10,3 +10,27 @@ Grasp the concept of Detection Engineering.
 Comprehend the Detection Engineering Lifecycle.
 
 Recognize various frameworks utilized in Detection Engineering.
+
+# What is Detection Engineering?
+
+## Detection Engineering
+
+Cybersecurity is rapidly advancing due to technological progress. As a result, adversary actions are also evolving, making cyber attacks increasingly frequent and sophisticated, challenging security teams to keep up. Therefore, new mindsets and practices are essential for security teams to match adversaries' pace. This is where detection engineering plays a crucial role.
+
+Detection engineering involves continuously developing and operating threat intelligence analytics to detect potentially malicious activities or misconfigurations in your environment. It demands a cultural shift, requiring all security teams and management to align in building robust, threat-informed defense systems.
+
+## Detection Types
+
+Threat detection can be categorized into two main perspectives, each with two subcategories:
+
+**Environment-based Detection**: This focuses on changes within an environment, based on predefined configurations and baseline activities. It includes:
+
+1. Configuration Detection
+
+2. Modelling
+
+**Threat-based Detection**: This targets elements related to adversary activities, such as tactics, tools, and artifacts that reveal their actions. It comprises:
+
+1. Indicators
+
+2. Threat Behaviour Detections
