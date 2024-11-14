@@ -34,3 +34,12 @@ Threat detection can be categorized into two main perspectives, each with two su
 1. Indicators
 
 2. Threat Behaviour Detections
+
+## Configuration Detection
+
+This detection method utilizes existing knowledge of the environment and infrastructure to pinpoint misalignments. It spans multiple domains, such as network, asset, and identity.
+
+Configuration detection offers several benefits and faces certain challenges:
+
+![image](https://github.com/user-attachments/assets/859acf35-be58-4ec0-914c-be72f41ca5ca)
+
