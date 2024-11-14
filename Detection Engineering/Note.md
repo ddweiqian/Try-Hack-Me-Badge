@@ -96,3 +96,43 @@ Detection as Code offers several advantages:
 4. **Code Reusability**: As detection patterns develop, engineers can reuse code for similar functions across different detections, accelerating the detection process by avoiding the need to start from scratch.
 
 ![image](https://github.com/user-attachments/assets/612e06aa-7ee5-4848-908d-753cfbc22063)
+
+# Detection Engineering Methodologies
+
+## Detection Gap Analysis
+
+The initial step involves examining the environment to pinpoint key areas where organizations can enhance threat detection. This process, also known as threat modeling, can be approached in the following ways:
+
+**Reactive**: Reviewing recent internal incident reports, learning from the attacks, and identifying areas where detection was missed.
+
+**Proactive**: Utilizing the ATT&CK framework and various threat intelligence sources to map out potential attack areas and the TTPs that adversaries might use against your environment.
+
+Note: In this context, threat modeling differs from the detection type discussed earlier.
+
+## Datasource Identification and Log Collection
+
+With knowledge of relevant threat actors, TTPs, and potential risks the organization may face, it's crucial to identify relevant data sources associated with these risks. This helps determine which logs are currently available to aid in defining detections and identifying any missing or necessary logs.
+
+### Baseline Creation
+
+Before leveraging collected information about adversaries, their TTPs, and any malicious behavior, security analysts need to understand normal behavior and establish security baselines. This ongoing process requires participation from all departments within the organization.
+
+Setting up security baselines involves identifying the various types of devices operating within the organization based on their OS, services, and functions. Security baselines can be categorized into:
+
+**High-level**: Broad, OS-independent standards guided by a specified security policy.
+
+**Technical**: OS-based configuration standards outlining different system functions and intended behaviors, such as OS hardening policies, network activities, IAM policies, and application policies.
+
+### Log Collection
+
+After identifying and prioritizing baselines and internal data sources, the next step is collecting logs and metadata useful for threat detection. Depending on the infrastructure, a centralized system may aggregate all logs using network sensors for network data and services like Sysmon for host data.
+
+## Rule Writing
+
+Based on the infrastructure and SIEM services, detection rules need to be written and tested against data sources. Detection rules evaluate abnormal patterns in logged events. Network traffic can be assessed using Snort rules, while Yara rules can evaluate file data. For more information, explore the Snort and Yara rooms.
+
+As part of the Detection Engineering module, we'll explore Sigma, a generic signature language used to write detection rules against log files.
+
+## Deployment, Automation & Tuning
+
+Tested detection rules must be deployed in a live environment for assessment. Over time, these detections need to be modified and updated to account for changes in attack vectors, patterns, or the environment. This process improves the quality of detections and encourages continuous refinement.
