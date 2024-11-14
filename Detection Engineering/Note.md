@@ -191,23 +191,23 @@ Without established detection functions, there is no opportunity to execute resp
 
 The DML model features nine maturity levels, numbered from 0 to 8. The lowest level focuses on the technical aspects of an attack, while the highest level addresses abstract and intelligence-based aspects. The individual levels are described as follows:
 
-**DML-8 Goals**: At the highest level, organizations can detect the motives and goals of an adversary. However, detections based solely on goals are nearly impossible, as they often rely on behavioral insights from lower DML levels.
+**DML-8 Goals:** At the highest level, organizations can detect the motives and goals of an adversary. However, detections based solely on goals are nearly impossible, as they often rely on behavioral insights from lower DML levels.
 
-**DML-7 Strategy**: Just below DML-8, this level focuses on the adversary's intentions and strategies. Organizations at this level have mature intelligence sources providing context about the adversary's plans, aiding responders.
+**DML-7 Strategy:** Just below DML-8, this level focuses on the adversary's intentions and strategies. Organizations at this level have mature intelligence sources providing context about the adversary's plans, aiding responders.
 
-**DML-6 Tactics**: Organizations should be able to identify tactics used by adversaries without necessarily knowing the specific techniques or tools. Tactics can be detected by observing patterns of events over time and under specific conditions.
+**DML-6 Tactics:** Organizations should be able to identify tactics used by adversaries without necessarily knowing the specific techniques or tools. Tactics can be detected by observing patterns of events over time and under specific conditions.
 
-**DML-5 Techniques**: Techniques are often unique to individuals or APTs, leaving traces of attack habits and behaviors. Organizations that can detect the presence of specific threat actors within their environment gain a significant advantage.
+**DML-5 Techniques:** Techniques are often unique to individuals or APTs, leaving traces of attack habits and behaviors. Organizations that can detect the presence of specific threat actors within their environment gain a significant advantage.
 
-**DML-4 Procedures**: At this level, organizations need to detect sequences of adversary events. These events are usually well-organized and follow a specific pattern, such as pre-exfiltration reconnaissance.
+**DML-4 Procedures:** At this level, organizations need to detect sequences of adversary events. These events are usually well-organized and follow a specific pattern, such as pre-exfiltration reconnaissance.
 
-**DML-3 Tools**: Tool detection occurs in two phases: the **transfer phase**, where the tool is transferred via the network to a host device, and the **functionality and operation** phase, detecting the tool's functionality. This level may require reverse engineering adversarial tools to understand their capabilities and prevent damage.
+**DML-3 Tools:** Tool detection occurs in two phases: the **transfer phase**, where the tool is transferred via the network to a host device, and the **functionality and operation** phase, detecting the tool's functionality. This level may require reverse engineering adversarial tools to understand their capabilities and prevent damage.
 
-**DML-2 Host & Network Artifacts**: Resources are often spent gathering IOCs and artifacts as threat intelligence. Indicators are typically observed after the fact, meaning adversaries might already be causing damage when artifacts are detected.
+**DML-2 Host & Network Artifacts:** Resources are often spent gathering IOCs and artifacts as threat intelligence. Indicators are typically observed after the fact, meaning adversaries might already be causing damage when artifacts are detected.
 
-**DML-1 Atomic Indicators**: Organizations at this level use threat intel feeds, such as IP addresses and domains, to detect threats.
+**DML-1 Atomic Indicators:** Organizations at this level use threat intel feeds, such as IP addresses and domains, to detect threats.
 
-**DML-0 None**: At this foundational level, organizations have no established detection processes.
+**DML-0 None:** At this foundational level, organizations have no established detection processes.
 
 ![image](https://github.com/user-attachments/assets/550d2276-b9b5-47fb-988b-bdc305bd9b9b)
 
