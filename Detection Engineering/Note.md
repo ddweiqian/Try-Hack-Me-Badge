@@ -144,3 +144,37 @@ MITRE’s ATT&CK and CAR Frameworks
 Pyramid of Pain
 
 Cyber Kill Chain
+
+# Detection Engineering Frameworks 2
+
+[Alerting and Detection Strategy Framework](https://github.com/palantir/alerting-detection-strategy-framework)
+
+**Palantir's ADS Framework** was developed to guide the documentation of detection content, addressing challenges such as alert fatigue and apathy due to ineffective detection alerts. This framework aims to create effective detections and alerts, ensuring a structured approach.
+
+The ADS Framework follows a strict sequence that detection engineers must adhere to before deploying detection rules into production. The stages include:
+
+1. **Goal**: Explains the purpose behind setting up the alert and the type of behavior that needs to be detected.
+
+2. **Categorisation**: Maps the detection to the MITRE ATT&CK framework, offering analysts insights on the TTPs for investigation and the parts of the kill chain where the ADS will be applied.
+
+3. **Strategy Abstract**: Provides an overview of how the detection strategy will function, detailing what the alert will look for, the data sources, enrichment resources, and ways to reduce false positives.
+
+4 **Technical Context**: Describes the technical environment for the detection, providing analysts and responders with all necessary information to understand the alert. This should align with the platforms and tools used for threat alerts.
+
+5. **Blind Spots and Assumptions**: Identifies any potential issues where suspicious activities might not trigger the strategy. Clarifies how the ADS might fail or be bypassed.
+
+6 **False Positives**: Lists scenarios where alerts might be triggered by misconfigurations or benign activities, aiding in configuring SIEM to target only relevant threats.
+
+7. **Validation**: Details the steps required to produce a true-positive event that would trigger the alert. This is akin to a unit test, which could be a script or scenario used to generate an alert. Effective validation includes:
+
+Developing a plan for a true-positive outcome
+
+Documenting the process
+
+Testing and triggering an alert in a controlled environment
+
+Validating the strategy that triggered the alert
+
+8. **Priority**: Sets up the alerting levels with criteria for preferences, separate from the alerting levels shown through SIEM.
+
+9 **Response**: Provides guidance on how to triage and investigate a detection alert, helping analysts and responders prevent serious consequences.
