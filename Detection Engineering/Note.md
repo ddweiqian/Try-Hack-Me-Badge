@@ -178,3 +178,46 @@ The ADS Framework follows a strict sequence that detection engineers must adhere
 8. **Priority**: Sets up the alerting levels with criteria for preferences, separate from the alerting levels shown through SIEM.
 
 9. **Response**: Provides guidance on how to triage and investigate a detection alert, helping analysts and responders prevent serious consequences.
+
+![image](https://github.com/user-attachments/assets/51074674-592a-4088-9c6c-d6ab8b751885)
+
+## Detection Maturity Level Model(DML Model)
+
+In 2014, [Ryan Stillions](https://ryanstillions.blogspot.com/2014/04/the-dml-model_21.html) introduced the Detection Maturity Level (DML) model to help organizations assess their maturity in effectively ingesting and utilizing cyber threat intelligence to detect adversary actions. According to Ryan, the model is guided by two principles:
+
+An organization's maturity is not determined by its ability to acquire valuable intelligence, but by how well it applies that intelligence to detection and response.
+
+Without established detection functions, there is no opportunity to execute response functions.
+
+The DML model features nine maturity levels, numbered from 0 to 8. The lowest level focuses on the technical aspects of an attack, while the highest level addresses abstract and intelligence-based aspects. The individual levels are described as follows:
+
+**DML-8 Goals**: At the highest level, organizations can detect the motives and goals of an adversary. However, detections based solely on goals are nearly impossible, as they often rely on behavioral insights from lower DML levels.
+
+**DML-7 Strategy**: Just below DML-8, this level focuses on the adversary's intentions and strategies. Organizations at this level have mature intelligence sources providing context about the adversary's plans, aiding responders.
+
+**DML-6 Tactics**: Organizations should be able to identify tactics used by adversaries without necessarily knowing the specific techniques or tools. Tactics can be detected by observing patterns of events over time and under specific conditions.
+
+**DML-5 Techniques**: Techniques are often unique to individuals or APTs, leaving traces of attack habits and behaviors. Organizations that can detect the presence of specific threat actors within their environment gain a significant advantage.
+
+**DML-4 Procedures**: At this level, organizations need to detect sequences of adversary events. These events are usually well-organized and follow a specific pattern, such as pre-exfiltration reconnaissance.
+
+**DML-3 Tools**: Tool detection occurs in two phases: the **transfer phase**, where the tool is transferred via the network to a host device, and the **functionality and operation** phase, detecting the tool's functionality. This level may require reverse engineering adversarial tools to understand their capabilities and prevent damage.
+
+**DML-2 Host & Network Artifacts**: Resources are often spent gathering IOCs and artifacts as threat intelligence. Indicators are typically observed after the fact, meaning adversaries might already be causing damage when artifacts are detected.
+
+**DML-1 Atomic Indicators**: Organizations at this level use threat intel feeds, such as IP addresses and domains, to detect threats.
+
+**DML-0 None**: At this foundational level, organizations have no established detection processes.
+
+![image](https://github.com/user-attachments/assets/550d2276-b9b5-47fb-988b-bdc305bd9b9b)
+
+In the original DML model publication, Ryan identified four essential use cases for the model:
+
+1. To create a common language for more effective communication of threat information.
+
+2. To evaluate detection maturity against known threat actors.
+
+3. To assess the maturity of security vendors and products in use.
+
+4. To provide context for analysts by incorporating DML levels into Yara rules, Snort signatures, and SIEM correlation rules.
+
