@@ -167,13 +167,13 @@ The ADS Framework follows a strict sequence that detection engineers must adhere
 
 7. **Validation**: Details the steps required to produce a true-positive event that would trigger the alert. This is akin to a unit test, which could be a script or scenario used to generate an alert. Effective validation includes:
 
-1) Developing a plan for a true-positive outcome
+- Developing a plan for a true-positive outcome
 
-2) Documenting the process
+- Documenting the process
 
-3) Testing and triggering an alert in a controlled environment
+- Testing and triggering an alert in a controlled environment
 
-Validating the strategy that triggered the alert
+- Validating the strategy that triggered the alert
 
 8. **Priority**: Sets up the alerting levels with criteria for preferences, separate from the alerting levels shown through SIEM.
 
