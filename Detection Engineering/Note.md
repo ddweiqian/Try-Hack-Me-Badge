@@ -63,3 +63,34 @@ This detection method comes with its own set of benefits and challenges:
 
 ![image](https://github.com/user-attachments/assets/9b217261-20c5-47fb-bce8-4d6328d501d3)
 
+### Threat Behaviour Detection
+
+This method involves analysts examining an adversary's Tactics, Techniques, and Procedures (TTPs) to detect attacks, rather than relying solely on specific indicators. This approach enhances scalability in detection efforts.
+
+By focusing on threat behaviour detection, analysts can more efficiently respond to threats and mitigate them without spending excessive time and resources on understanding the triggers for alerts. Additionally, this detection method can be integrated with established workflows and playbooks, providing best practices to follow during investigations.
+
+This detection method also comes with its own set of benefits and challenges:
+
+![image](https://github.com/user-attachments/assets/cd5eb584-b5f5-4d95-a8f5-5957cf3f2cf2)
+
+Combining these forms of detection results in more robust defence systems. For example, model-based detection can be strengthened with expert-led configuration detection to reduce the chances of having false positives throwing alerts.
+
+## Detection as Code (DaC)
+
+Detection as Code is an organized method for creating detection systems by using best practices from software engineering. This approach treats detection processes and logic as code, enabling scalability to adapt to evolving environments and adversary tactics.
+
+DaC introduces a code-centric workflow that integrates essential elements from Continuous Integration/Continuous Development (CI/CD) workflows, such as:
+
+**Version Control**: Many SIEMs and EDR products lack the ability to track changes to alerts and their definitions. Incorporating version control allows for quick review, testing, and accountability of detection rules and processes, leading to higher-quality detections.
+
+**Automation Workflows**: Adopting CI/CD workflows facilitates automated detection testing, enabling swift transitions and production deployments.
+
+Detection as Code offers several advantages:
+
+**Customizable and Flexible Detections**: Utilizing common languages for detections, like Sigma and YARA, allows DaC to be vendor-neutral and deployable across various SIEM, EDR, and XDR solutions.
+
+**Test-Driven Development**: Quality testing of detection code helps identify blind spots and false positives early in the process, enhancing detection effectiveness. This approach also improves detection quality and ensures thorough documentation.
+
+**Team Collaboration**: CI/CD workflows reduce isolation between security teams and promote collaboration through the coding process.
+
+**Code Reusability**: As detection patterns develop, engineers can reuse code for similar functions across different detections, accelerating the detection process by avoiding the need to start from scratch.
