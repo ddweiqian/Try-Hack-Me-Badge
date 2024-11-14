@@ -35,11 +35,31 @@ Threat detection can be categorized into two main perspectives, each with two su
 
 2. Threat Behaviour Detections
 
-## Configuration Detection
+### Configuration Detection
 
 This detection method utilizes existing knowledge of the environment and infrastructure to pinpoint misalignments. It spans multiple domains, such as network, asset, and identity.
 
 Configuration detection offers several benefits and faces certain challenges:
 
 ![image](https://github.com/user-attachments/assets/859acf35-be58-4ec0-914c-be72f41ca5ca)
+
+### Modelling
+
+This threat detection method involves setting up baseline operations and activities, and then noting any deviations. The core idea is that malicious activity can be distinguished from benign activity.
+
+This approach entails creating an asset or activity profile that captures baseline events, time frames, and data thresholds. An in-depth exploration of baselining will be covered in the next task.
+
+The benefits and challenges of this detection method include:
+
+![image](https://github.com/user-attachments/assets/b0ae2406-c806-4fb6-8fed-2eee8b6a0ebe)
+
+### Indicator Detection
+
+Indicators are bits of information that provide context and state of an element or entity. There are **good** indicators, which identify legitimate activities or resources (like those in whitelists), and **bad** indicators, which pinpoint suspicious or malicious resources (such as blacklists or malware IPs).
+
+Indicators of Compromise (IOCs) are often derived from investigations into malicious activities. By observing and analyzing these threat activities, analysts can develop detections using these identified indicators and adjust them as adversarial tactics evolve.
+
+This detection method comes with its own set of benefits and challenges:
+
+![image](https://github.com/user-attachments/assets/9b217261-20c5-47fb-bce8-4d6328d501d3)
 
