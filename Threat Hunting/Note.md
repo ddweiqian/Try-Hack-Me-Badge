@@ -1,9 +1,9 @@
 
-Threat Hunting Introduction
+# Threat Hunting Introduction
 
 Threat hunting is an approach to finding cyber security threats where there’s an active effort done to look for signs of malicious activity. In its most basic form, that is the definition of Threat Hunting; however, in order for us to really understand what it entails as well as what its actual role is in the organisation, we will start by contrasting it with Incident Response.
 
-Threat Hunting in Contrast with Incident Response
+# Threat Hunting in Contrast with Incident Response
 
 Incident Response (IR) is innately reactive. The action, or “response”, is triggered by an initial notification or alert. This initial notification is first triaged, then analysed, and when enough pieces of evidence point to malicious activity, it is deemed an incident that needs to be responded to and dealt with accordingly.
 
