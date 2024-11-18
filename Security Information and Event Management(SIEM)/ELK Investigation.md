@@ -218,10 +218,66 @@ https://github.com/user-attachments/assets/47384c61-1357-4c09-b520-e8e9e3a37799
 
 As we click on the search bar, we will be presented with all the available fields that we can use in our search query. To explore the other options of KQL, look at this [official reference](https://www.elastic.co/guide/en/kibana/7.17/kuery-query.html)
 
-## Create Visualization
+## Creating Visualization
 
+### Create Visualization
 The visualization tab allows us to visualize the data in different forms like Table, Pie charts, Bar charts, etc. This visualization task will use multiple options this tab provides to create some simple presentable visualizations.
 
 There are a few ways to navigate to the visualization tab. One way is to click on any field in the discover tab and click on the visualization as shown below.
 
 [![How to Create a Data Table with Kibana Lens](https://img.youtube.com/vi/NRDue0dVBQI/hqdefault.jpg)](https://www.youtube.com/watch?v=NRDue0dVBQI)
+
+We can create multiple visualizations by selecting options like tables, pie charts, etc.
+
+### Correlation Option
+
+Often, we require creating correlations between multiple fields. Dragging the required field in the middle will create a correlation tab in the visualization tab. Here we selected the Source_Country as the second field to show a correlation among the client Source_IP.
+
+![image](https://github.com/user-attachments/assets/fca51e86-69b0-4ac3-9373-d8710f03cffd)
+
+We can also create a table to show the values of the selected fields as columns, as shown below.
+
+![image](https://github.com/user-attachments/assets/e40741b8-c385-47a7-997f-32ac7735c8da)
+
+The most important step in creating these visualizations is to save them. Click on the **save Option** on the right side and fill in the descriptive values below. We can add these visualizations to the already existing dashboard, or we can create a new one as well.
+
+![image](https://github.com/user-attachments/assets/22888400-91b7-4ca9-889a-d3694f79a350)
+
+Steps to take after creating Visualizations:
+
+- Create a visualization and Click on the Save button at the top right corner.
+- Add the title and description to the visualization.
+- We can add the visualization to any existing Dashboard or a new dashboard.
+- Click Save and add to the library when it's done.
+
+### Failed Connection Attempts
+
+We will utilize the knowledge gained above to create a table to display the user and the IP address involved in failed attempts.
+
+https://github.com/user-attachments/assets/05f1e000-974b-46ee-bec6-80366140055f
+
+## Creating Dashboards
+
+Dashboards provide good visibility on the logs collection. A user can create multiple dashboards to fulfil a specific need.
+
+In this task, we can combine different saved searches and visualizations to create a custom dashboard for VPN logs visibility.
+
+### Creating Custom Dashboard
+
+By now, we have saved a few searches from the Discover tab and created some visualizations, and saved them. It's time to explore the dashboard tab and create a custom dashboard. The steps to create a dashboard are:
+
+- Go to the Dashboard tab and click on the **Create dashboard**.
+
+![image](https://github.com/user-attachments/assets/72588fe0-d8a9-4b0f-8dc8-3b1cb105c892)
+
+- Click on Add from Library.
+- Click on the visualizations and saved searches. It will be added to the dashboard.
+- Once the items are added, adjust them accordingly, as shown below.
+- Don't forget to save the dashboard after completing it.
+
+
+
+https://github.com/user-attachments/assets/3ca13f85-3471-426e-aa3f-582bb8830f8f
+
+
+
