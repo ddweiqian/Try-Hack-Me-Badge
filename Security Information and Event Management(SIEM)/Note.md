@@ -13,13 +13,13 @@ As we know, each network component can generate various logs through different l
 ## Host-Centric Log Sources
 These capture events occurring within or related to the host. Examples of host-centric log sources include Windows Event logs, Sysmon, and Osquery. Some examples of host-centric logs are:
 
--A user accessing a file
+- A user accessing a file
 
--A user attempting to authenticate
+- A user attempting to authenticate
 
--A process execution activity
+- A process execution activity
 
--A process adding, editing, or deleting a registry key or value
+- A process adding, editing, or deleting a registry key or value
 
--PowerShell execution*
+- PowerShell execution*
 
