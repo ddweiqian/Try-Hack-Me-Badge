@@ -74,3 +74,36 @@ https://github.com/user-attachments/assets/534b97ee-5e3f-4101-b291-04b622dda643
 You can also create dashboards and add them to the Home Dashboard. 
 
 Please review the Splunk documentation on [Navigating Splunk here](https://docs.splunk.com/Documentation/Splunk/8.1.2/SearchTutorial/NavigatingSplunk).
+
+# Adding Data
+
+Splunk can ingest any data. As per the Splunk documentation, when data is added to Splunk, the data is processed and transformed into a series of individual events. 
+
+The data sources can be event logs, website logs, firewall logs, etc.
+
+Data sources are grouped into categories. Below is a chart listing from the Splunk documentation detailing each data source category.
+
+![image](https://github.com/user-attachments/assets/55f44f90-b59f-4706-b4f9-88815cdd03a7)
+
+In this room, we're going to focus on **VPN logs**. When we click on the** Add Data link** (from the Splunk home screen), we're presented with the following screen. 
+
+![image](https://github.com/user-attachments/assets/52aa12cf-4500-49ce-a898-c80f6226528c)
+
+
+We will use the Upload Option to upload the data from our local machine. Download the attached log file and upload it on Splunk.
+
+As shown above, it has a total of 5 steps to successfully upload the data.
+
+1. **Select Source** -> Where we select the Log source.
+2. **Select Source Type** -> Select what type of logs are being ingested.
+3. **Input Settings** ->Select the index where these logs will be dumped and hostName to be associated with the logs.
+4. **Review** -> Review all the gif
+5. **Done** -> Final step, where the data is uploaded successfully and ready to be analyzed.
+
+https://github.com/user-attachments/assets/5e4b17e3-cdc0-4c8d-b4bf-e73f8b4ebaaa
+
+As you can see, there are A LOT more logs we can add to the Splunk instance, and Splunk supports various source types.
+
+Download the attached log file "VPN_logs" and upload this file into the Splunk instance with the right source type.
+
+**Note**: In case you are using the AttackBox, the file is available in the **/root/Rooms/SplunkBasic/ directory**.
