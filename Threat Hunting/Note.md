@@ -11,7 +11,7 @@ More information about Incident Response, particularly the initial stages of it,
 
 Threat Hunting, on the other hand, is innately proactive. There is no actual ‘trigger’ that would mobilise a hunt, except for the pursuit of building the strength of the organisation’s security posture, guided by Threat Intelligence.
 
-A stark contrast can be seen here - while both are guided by the goal of ensuring the security of the organisation, the forces that drive the reactive and proactive nature of Incident Response and Threat Hunting, respectively, hardly share the same direction. This is further steered by the specific objectives that each aims to achieve.
+# A stark contrast can be seen here - while both are guided by the goal of ensuring the security of the organisation, the forces that drive the reactive and proactive nature of Incident Response and Threat Hunting, respectively, hardly share the same direction. This is further steered by the specific objectives that each aims to achieve.
 
 Reactive Approach	Proactive Approach
 Incident Response	Threat Hunting
