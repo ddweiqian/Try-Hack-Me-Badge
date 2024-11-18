@@ -136,3 +136,92 @@ By default, the documents are shown in raw form. We can click on any document an
 [![How to Create a Data Table with Kibana Lens](https://img.youtube.com/vi/NRDue0dVBQI/hqdefault.jpg)](https://www.youtube.com/watch?v=NRDue0dVBQI)
 
 Don't forget to save the table format once it is created. It will then show the same fields every time a user logs into the dashboard.
+
+## KQL Overview 
+
+KQL (Kibana Query Language) is a search query language used to search the ingested logs/documents in the elasticsearch. Apart from the KQL language, Kibana also supports Lucene Query Language. We can disable the KQL query as shown below.
+
+![image](https://github.com/user-attachments/assets/de74ff07-2400-475e-b1b1-55e806266b26)
+
+In this task, we will be exploring KQL syntax. With KQL, we can search for the logs in two different ways.
+
+- Free text search
+- Field-based search
+
+### Free text Search
+
+Free text search allows users to search for the logs based on the text-only. That means a simple search of the term **security** will return all the documents that contain this term, irrespective of the field.
+
+Let us look at the index, which includes the VPN logs. One of the fields **Source_Country** has the list of countries from where the VPN connections originated, as shown below.
+
+![image](https://github.com/user-attachments/assets/a9a5689f-03a5-497e-a6d3-39a4d6faa668)
+
+Let's search for the text **United States** in the search bar to return all the logs that contain this term regardless of the place or the field. This search returned 2304 hits, as shown below
+
+![image](https://github.com/user-attachments/assets/1b7ab135-330b-49b8-90e9-08dac26b6801)
+
+What if we only search for the term **United** Will it return any result?
+
+![image](https://github.com/user-attachments/assets/54b1b222-e2a7-4f0e-8420-6a5632479426)
+
+It didn't return any result because KQL looks for the whole term/word in the documents.
+
+### WILD CARD
+
+KQL allows the wild card * to match parts of the term/word. Let's find out how to use this wild card in the search query.
+
+KQL allows the wild card * to match parts of the term/word. Let's find out how to use this wild card in the search query.
+
+Search Query: **United***
+
+![image](https://github.com/user-attachments/assets/502d8b63-3124-4698-bbd0-56a7f21b7aa2)
+
+We have used the wildcard with the term **United** to return all the results containing the term United and any other term. If we had logs with the term **United Nations**. It would also have returned those as a result of this wildcard.
+
+## Logical Operators (AND | OR | NOT)
+
+KQL also allows users to utilize the logical operators in the search query. Let us see the examples below.
+
+1. **OR Operator**
+
+We will use the **OR** operator to show logs that contain either the **United States** or **England**.
+
+**Search Query:** **"United States"    OR     "England"**
+
+![image](https://github.com/user-attachments/assets/e27c299d-4986-4319-99ed-7bcd7c8b6d95)
+
+2- AND Operator
+
+Here, we will use **AND** Operator to create a search that will return the logs that contain the terms **"UNITED STATES"** AND **"Virginia."**
+
+**Search Query:** **"United States" AND "Virginia"**
+
+![image](https://github.com/user-attachments/assets/63e5c445-28f9-4d2f-99ee-326132a730b6)
+
+3. **NOT Operator**
+
+Similarly, we can use **NOT** Operator to remove the particular term from the search results. This search query will show the logs from **the United States**, including all states but ignoring Florida.
+
+**Search Query:** **"United States" AND NOT ("Florida")**
+
+![image](https://github.com/user-attachments/assets/f5200396-a761-449c-b796-28d4a26930c2)
+
+### Field-based search
+
+In the Field-based search, we will provide the field name and the value we are looking for in the logs. This search has a special syntax as **FIELD : VALUE**. It uses a colon **:** as a separator between the field and the value. Let's look at a few examples.
+
+**Search Query:** **Source_ip : 238.163.231.224    AND     UserName : Suleman**
+
+**Explanation:** We are telling Kibana to display all the documents in which the field **Source_ip** contains the value **19.112.190.54** and **UserName** as **Suleman** as shown below.
+
+https://github.com/user-attachments/assets/47384c61-1357-4c09-b520-e8e9e3a37799
+
+As we click on the search bar, we will be presented with all the available fields that we can use in our search query. To explore the other options of KQL, look at this [official reference](https://www.elastic.co/guide/en/kibana/7.17/kuery-query.html)
+
+## Create Visualization
+
+The visualization tab allows us to visualize the data in different forms like Table, Pie charts, Bar charts, etc. This visualization task will use multiple options this tab provides to create some simple presentable visualizations.
+
+There are a few ways to navigate to the visualization tab. One way is to click on any field in the discover tab and click on the visualization as shown below.
+
+[![How to Create a Data Table with Kibana Lens](https://img.youtube.com/vi/NRDue0dVBQI/hqdefault.jpg)](https://www.youtube.com/watch?v=NRDue0dVBQI)
