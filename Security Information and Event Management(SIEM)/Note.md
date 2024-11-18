@@ -65,10 +65,10 @@ Windows logs every event, which can be accessed via the Event Viewer utility. Ea
 
 Linux OS stores all the related logs, such as events, errors, warnings, etc. Which are then ingested into SIEM for continuous monitoring. Some of the common locations where Linux store logs are:
 
-- /var/log/httpd : Contains HTTP Request  / Response and error logs.
-- /var/log/cron   : Events related to cron jobs are stored in this location.
-- /var/log/auth.log and /var/log/secure : Stores authentication related logs.
-- /var/log/kern : This file stores kernel related events.
+- **/var/log/httpd** : Contains HTTP Request  / Response and error logs.
+- **/var/log/cron** : Events related to cron jobs are stored in this location.
+- **/var/log/auth.log and /var/log/secure** : Stores authentication related logs.
+- **/var/log/kern** : This file stores kernel related events.
 
   Here is a sample of a cron log:
 
@@ -84,13 +84,17 @@ Here is an example of Apache Logs:
 
 ## Log IngestionShows Log Ingestion in SIEM
 
+![image](https://github.com/user-attachments/assets/8cf4add3-2f62-46ea-b8f3-732f452c8b72)
+
 All these logs provide a wealth of information and can help in identifying security issues. Each SIEM solution has its own way of ingesting the logs. Some common methods used by these SIEM solutions are explained below:
 
-1) Agent / Forwarder: These SIEM solutions provide a lightweight tool called an agent (forwarder by Splunk) that gets installed in the Endpoint. It is configured to capture all the important logs and send them to the SIEM server.
+1) **Agent / Forwarder:** These SIEM solutions provide a lightweight tool called an agent (forwarder by Splunk) that gets installed in the Endpoint. It is configured to capture all the important logs and send them to the SIEM server.
 
-2) Syslog: Syslog is a widely used protocol to collect data from various systems like web servers, databases, etc., are sent real-time data to the centralized destination.
-3) Manual Upload: Some SIEM solutions, like Splunk, ELK, etc., allow users to ingest offline data for quick analysis. Once the data is ingested, it is normalized and made available for analysis.
+2) **Syslog:** Syslog is a widely used protocol to collect data from various systems like web servers, databases, etc., are sent real-time data to the centralized destination.
 
-4) Port-Forwarding: SIEM solutions can also be configured to listen on a certain port, and then the endpoints forward the data to the SIEM instance on the listening port.
+3) **Manual Upload:** Some SIEM solutions, like Splunk, ELK, etc., allow users to ingest offline data for quick analysis. Once the data is ingested, it is normalized and made available for analysis.
 
+4) **Port-Forwarding:** SIEM solutions can also be configured to listen on a certain port, and then the endpoints forward the data to the SIEM instance on the listening port.
+
+![image](https://github.com/user-attachments/assets/d1061b8c-eff4-40b6-b47b-a0054c9072da)
 
