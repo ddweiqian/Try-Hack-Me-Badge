@@ -91,4 +91,22 @@ Certain hunting tasks are best approached with logical queries. For example, hun
 ## Patterns of Activity
 When we narrow down the focus to specific threats, such as relevant threat actors, the next step is to identify their behavior patterns. The MITRE ATT&CK Matrix is an invaluable resource for understanding these patterns and can be particularly useful in this context.
 
+# Goal 
 
+## Why Threat Hunt?
+
+### Proactive Approach to Identifying Threats
+
+Security threats are ever-present, ranging from Script Kiddies to advanced, well-funded threats. It's crucial to identify these threats quickly, ideally before they can accomplish their malicious goals.
+
+### Detecting Hidden Threats
+
+Despite sophisticated attack chains or sheer luck, some malicious activities may evade detection mechanisms. Threat Hunting helps identify these hidden threats, triggering an Incident Response and feeding insights back into the Security Operations Center's continuous monitoring process.
+
+### Reducing Attackers' Dwell Time
+
+Undetected threat actors can freely explore the environment, gaining deeper insights and causing more damage. Threat Hunting aims to **minimize the time attackers remain undetected**, reducing potential harm to the organization's assets.
+
+### Enhancing Detection Methods
+
+The ultimate goal is to use findings from Threat Hunting to improve continuous monitoring. Security is an ongoing process, so once a previously undetected threat is identified, efforts should focus on **developing detection mechanisms** for similar future threats.
