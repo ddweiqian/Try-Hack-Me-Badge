@@ -61,7 +61,7 @@ Every network device generates logs whenever activities occur, such as a user vi
 
 Windows logs every event, which can be accessed via the Event Viewer utility. Each log activity is assigned a unique ID, simplifying the analyst's task of examining and tracking them. To view events, simply type **Event Viewer** in the search bar, and it will open the tool where various logs are stored and can be reviewed. These logs from all Windows endpoints are then sent to the SIEM solution for enhanced monitoring and visibility.
 
-[![Watch the video]((https://img.youtube.com/vi/KXrwAmoJ_2I&t=146s/hqdefault.jpg)])](https://www.youtube.com/watch?v=KXrwAmoJ_2I&t=146s)
+[![Overview of Event Viewer in Windows Server]((https://img.youtube.com/vi/KXrwAmoJ_2I&t=146s/hqdefault.jpg)])](https://www.youtube.com/watch?v=KXrwAmoJ_2I&t=146s)
 
 ## Linux Workstation
 
