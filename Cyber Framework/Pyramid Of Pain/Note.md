@@ -190,8 +190,16 @@ TTPs stands for Tactics, Techniques & Procedures. This includes the whole [MITRE
 
 If you can detect and respond to the TTPs quickly, you leave the adversaries almost no chance to fight back. For, example if you could detect a [Pass-the-Hash](https://www.beyondtrust.com/resources/glossary/pass-the-hash-pth-attack) attack using Windows Event Log Monitoring and remediate it, you would be able to find the compromised host very quickly and stop the lateral movement inside your network. At this point, the attacker would have two options:
 
+
+As David Bianco states, "the amount of pain you cause an adversary depends on the types of indicators you are able to make use of". 
 1. Go back, do more research and training, reconfigure their custom tools
 2. Give up and find another target
 Option 2 definitely sounds less time and resource-consuming.
 
-# 
+# Conclusion
+
+Now you have learned the concept of the Pyramid of Pain. Maybe it is time to apply this in practice. Please, navigate to the Static Site to perform the exercise. 
+
+You can pick any APT (Advanced Persistent Threat Groups) as another exercise. A good place to look at would be [FireEye Advanced Persistent Threat Groups](https://cloud.google.com/security/mandiant). When you have determined the APT Group you want to research - find their indicators and ask yourself: " What can I do or what detection rules and approach can I create to detect the adversary's activity?", and "Where does this activity or detection fall on the Pyramid of Pain?”
+
+As David Bianco states, "**the amount of pain you cause an adversary depends on the types of indicators you are able to make use of**". 
