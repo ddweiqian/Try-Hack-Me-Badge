@@ -86,3 +86,37 @@ Under Implementations, a pseudocode is provided and an EQL version of the pseudo
 
 To summarize, CAR is a great place for finding analytics that takes us further than the Mitigation and Detection summaries in the ATT&CK® framework. This tool is not a replacement for ATT&CK® but an added resource.
 
+# MITRE ENGAGE
+
+Per the website, "**MITRE Engage** *is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals*."
+
+MITRE Engage is considered an **Adversary Engagement Approach**. This is accomplished by the implementation of **Cyber Denial** and **Cyber Deception**. 
+
+With **Cyber Denial** we prevent the adversary's ability to conduct their operations and with **Cyber Deception** we intentionally plant artifacts to mislead the adversary. 
+
+The Engage website provides a [starter kit](https://engage.mitre.org/starter-kit/) to get you 'started' with the Adversary Engagement Approach. The starter kit is a collection of whitepapers and PDFs explaining various checklists, methodologies, and processes to get you started. 
+
+As with MITRE ATT&CK, Engage has its own matrix. Below is a visual of the **Engage Matrix**(Source: https://engage.mitre.org).
+
+![image](https://github.com/user-attachments/assets/2b06a389-dfd8-43a2-aee9-62185455edeb)
+
+Let's quickly explain each of these categories based on the information on the Engage website.
+- **Prepare** the set of operational actions that will lead to your desired outcome (input)
+- **Expose** adversaries when they trigger your deployed deception activities 
+- **Affect** adversaries by performing actions that will have a negative impact on their operations
+- **Elicit** information by observing the adversary and learn more about their modus operandi (TTPs)
+- **Understand** the outcomes of the operational actions (output) 
+
+Refer to the [Engage Handbook](https://engage.mitre.org/wp-content/uploads/2022/04/EngageHandbook-v1.0.pdf) to learn more. 
+
+You can interact with the [Engage Matrix Explorer](https://engage.mitre.org/matrix/). We can filter by information from [MITRE ATT&CK](https://attack.mitre.org/). 
+
+Note that by default the matrix focuses on Operate, which entails Expose, Affect, and Elicit. 
+
+![image](https://github.com/user-attachments/assets/dc917659-638d-4faa-a1f2-bc435ab3f33e)
+
+You can click on **Prepare** or **Understand** if you wish to focus solely on that part of the matrix.
+
+
+https://github.com/user-attachments/assets/d0facb8b-509c-4e4a-b564-f6bf5bbcd7e7
+
