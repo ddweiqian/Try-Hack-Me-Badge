@@ -3,7 +3,7 @@
 
 Understanding the behaviours, objectives and methodologies of a cyber threat is a vital step to establishing a strong cybersecurity defence (known as a cybersecurity posture).
 
- UKC (Unified Kill Chain) framework is used to help understand how cyber attacks occur.
+ UKC (Unified Kill Chain) framework is used to help understand how cyber attacks occur, the UKC is a modern extension of other frameworks, such as Lockheed Martin's "Cyber Kill Chain" framework.
 
  # What is a "Kill Chain"
 
@@ -129,3 +129,64 @@ An adversary can establish command and control of a target system to achieve its
 "Pivoting" is the technique an adversary uses to reach other systems within a network that are not otherwise accessible (for example, they are not exposed to the internet). There are often many systems in a network that are not directly reachable and often contain valuable data or have weaker security.
 
 For example, an adversary can gain access to a web server that is publically accessible to attack other systems that are within the same network (but are not accessible via the internet).
+
+# Phase: Through (Network Propagation)
+
+![image](https://github.com/user-attachments/assets/a4bb7d56-fc76-42f1-80a0-ff366fc0a4c3)
+
+This phase follows a successful foothold being established on the target network. An attacker would seek to gain additional access and privileges to systems and data to fulfil their goals. The attacker would set up a base on one of the systems to act as their pivot point and use it to gather information about the internal network.
+
+![image](https://github.com/user-attachments/assets/04ef1303-75d3-4b85-a907-5a79e6eb2d8d)
+
+**Pivoting** ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/))
+
+Once the attacker has access to the system, they would use it as their staging site and a tunnel between their command operations and the victim’s network. The system would also be used as the distribution point for all malware and backdoors at later stages.
+
+**Discovery** ([MITRE Tactic TA0007](https://attack.mitre.org/tactics/TA0007/))
+The adversary would uncover information about the system and the network it is connected to. Within this stage, the knowledge base would be built from the active user accounts, the permissions granted, applications and software in use, web browser activity, files, directories and network shares, and system configurations.
+
+**Privilege Escalation** ([MITRE Tactic TA0004](https://attack.mitre.org/tactics/TA0004/))
+Following their knowledge-gathering, the adversary would try to gain more prominent permissions within the pivot system. They would leverage the information on the accounts present with vulnerabilities and misconfigurations found to elevate their access to one of the following superior levels:
+
+- SYSTEM/ ROOT.
+- Local Administrator.
+- A user account with Admin-like access.
+- A user account with specific access or functions.
+
+**Execution** ([MITRE Tactic TA0002](https://attack.mitre.org/tactics/TA0002/))
+This is where they deploy their malicious code using the pivot system as their host. Remote trojans, C2 scripts, malicious links and scheduled tasks are deployed and created to facilitate a recurring presence on the system and uphold their persistence.
+
+**Credential Access** ([MITRE Tactic TA0006](https://attack.mitre.org/tactics/TA0006/))
+Working hand in hand with the Privilege Escalation stage, the adversary would attempt to steal account names and passwords through various methods, including keylogging and credential dumping. This makes them harder to detect during their attack as they would be using legitimate credentials.
+
+**Lateral Movement** ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/))
+
+With the credentials and elevated privileges, the adversary would seek to move through the network and jump onto other targeted systems to achieve their primary objective. The stealthier the technique used, the better.
+
+# Phase: Out (Action on Objectives)
+
+![image](https://github.com/user-attachments/assets/40be9ec7-6952-4e3b-897f-c2a0dbb25503)
+
+This phase wraps up the journey of an adversary’s attack on an environment, where they have critical asset access and can fulfil their attack goals. These goals are usually geared toward compromising the confidentiality, integrity and availability (CIA) triad.
+
+
+
+
+
+
+The tactics to be deployed by an attacker would include:
+
+**Collection MITRE Tactic** ([MITRE Tactic TA0009](https://attack.mitre.org/tactics/TA0009/))
+After all the hunting for access and assets, the adversary will be seeking to gather all the valuable data of interest. This, in turn, compromises the confidentiality of the data and would lead to the next attack stage – Exfiltration. The main target sources include drives, browsers, audio, video and email.
+
+**Exfiltration** ([MITRE Tactic TA0010](https://attack.mitre.org/tactics/TA0010/))
+
+To elevate their compromise, the adversary would seek to steal data, which would be packaged using encryption measures and compression to avoid any detection. The C2 channel and tunnel deployed in the earlier phases will come in handy during this process.
+
+**Impact** ([MITRE Tactic TA0040](https://attack.mitre.org/tactics/TA0040/))
+If the adversary seeks to compromise the integrity and availability of the data assets, they would manipulate, interrupt or destroy these assets. The goal would be to disrupt business and operational processes and may involve removing account access, disk wipes, and data encryption such as ransomware, defacement and denial of service (DoS) attacks.
+
+**Objectives**
+With all the power and access to the systems and network, the adversary would seek to achieve their strategic goal for the attack.
+
+For example, if the attack was financially motivated, they may seek to encrypt files and systems with ransomware and ask for payment to release the data. In other instances, the attacker may seek to damage the reputation of the business, and they would release private and confidential information to the public.
