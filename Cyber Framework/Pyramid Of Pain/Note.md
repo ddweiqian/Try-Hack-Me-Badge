@@ -64,3 +64,74 @@ Domain Names can be thought as simply mapping an IP address to a string of text.
 
 Domain Names can be a little more of a pain for the attacker to change as they would most likely need to purchase the domain, register it and modify DNS records. Unfortunately for defenders, many DNS providers have loose standards and provide APIs to make it even easier for the attacker to change the domain.
 
+![image](https://github.com/user-attachments/assets/87192f1e-9f67-4e49-a05f-fe724987cd56)
+
+![image](https://github.com/user-attachments/assets/a5c606d0-8d63-4d25-8a18-a934ce1cef30)
+
+Can you spot anything malicious in the above screenshot? Now, compare it to the legitimate website view below:
+
+![image](https://github.com/user-attachments/assets/a97c172e-cafe-4943-9703-22d31ecdca95)
+
+This is one of the examples of a Punycode attack used by the attackers to redirect users to a malicious domain that seems legitimate at first glance.
+
+What is Punycode? As per [Wandera](https://www.jamf.com/blog/punycode-attacks/), "Punycode is a way of converting words that cannot be written in ASCII, into a Unicode ASCII encoding."
+
+What you saw in the URL above is **adıdas.de** which has the Punycode of **http://xn--addas-o4a.de/**
+
+Internet Explorer, Google Chrome, Microsoft Edge, and Apple Safari are now pretty good at translating the obfuscated characters into the full Punycode domain name.
+
+To detect the malicious domains, proxy logs or web server logs can be used.
+
+Attackers usually hide the malicious domains under URL Shorteners. A URL Shortener is a tool that creates a short and unique URL that will redirect to the specific website specified during the initial step of setting up the URL Shortener link. According to [Cofense](https://cofense.com/url-shorteners-fraudsters-friend/), attackers use the following URL Shortening services to generate malicious links: 
+
+- bit.ly
+- goo.gl
+- ow.ly
+- s.id
+- smarturl.it
+- tiny.pl
+- tinyurl.com
+- x.co
+- 
+You can see the actual website the shortened link is redirecting you to by appending "+" to it (see the examples below). Type the shortened URL in the address bar of the web browser and add the above characters to see the redirect URL.
+
+**NOTE: The examples of the shortened links below are non-existent.**
+
+![image](https://github.com/user-attachments/assets/5ef7d028-cc60-4f0f-ae72-399806065537)
+
+**Viewing Connections in Any.run:**
+
+Because Any.run is a sandboxing service that executes the sample, we can review any connections such as HTTP requests, DNS requests or processes communicating with an IP address. To do so, we can look at the "networking" tab located just below the snapshot of the machine.
+
+Please note: you should be extremely cautious about visiting any of the IP addresses or HTTP requests made in a report. After all, these are behaviours from the malware sample - so they're probably doing something dangerous!
+
+**HTTP Requests:**
+
+This tab shows the recorded HTTP requests since the detonation of the sample. This can be useful to see what resources are being retrieved from a webserver, such as a dropper or a callback.
+
+![image](https://github.com/user-attachments/assets/1c94553f-2c38-4bc9-85cc-90943386a38c)
+
+**Connections:**
+
+This tab shows any communications made since the detonation of the sample. This can be useful to see if a process communicates with another host. For example, this could be C2 traffic, uploading/downloading files over FTP, etc.
+
+![image](https://github.com/user-attachments/assets/217be002-6f39-4def-bb7c-c91501ebceb6)
+
+**DNS Requests:**
+
+This tab shows the DNS requests made since the detonation of the sample. Malware often makes DNS requests to check for internet connectivity (I.e. if It can't reach the internet/call home, then it's probably being sandboxed or is useless). 
+
+# Host Artifacts (Annoying)
+Let's take another step up to the yellow zone.
+
+On this level, the attacker will feel a little more annoyed and frustrated if you can detect the attack. The attacker would need to circle back at this detection level and change his attack tools and methodologies. This is very time-consuming for the attacker, and probably, he will need to spend more resources on his adversary tools.
+
+Host artifacts are the traces or observables that attackers leave on the system, such as registry values, suspicious process execution, attack patterns or IOCs (Indicators of Compromise), files dropped by malicious applications, or anything exclusive to the current threat.
+
+![image](https://github.com/user-attachments/assets/463b0235-4496-44bf-83fd-b1fe4f31c61f)
+
+The files modified/dropped by the malicious actor:
+
+![image](https://github.com/user-attachments/assets/17500754-2ae1-498d-8959-50daa7babb28)
+
+
