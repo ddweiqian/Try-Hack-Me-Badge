@@ -55,3 +55,12 @@ One of the ways an adversary can make it challenging to successfully carry out I
 According to [Akamai](https://www.akamai.com/blog), Fast Flux is a DNS technique used by botnets to hide phishing, web proxying, malware delivery, and malware communication activities behind compromised hosts acting as proxies. The purpose of using the Fast Flux network is to make the communication between malware and its command and control server (C&C) challenging to be discovered by security professionals. 
 
 So, the primary concept of a Fast Flux network is having multiple IP addresses associated with a domain name, which is constantly changing. Palo Alto created a great fictional scenario to explain Fast Flux: "[Fast Flux 101: How Cybercriminals Improve the Resilience of Their Infrastructure to Evade Detection and Law Enforcement Takedowns](https://unit42.paloaltonetworks.com/fast-flux-101/)"
+
+# Domain Names (Simple)
+
+Let's step up the Pyramid of Pain and move on to Domain Names. You can see the transition of colors - from green to teal.
+
+Domain Names can be thought as simply mapping an IP address to a string of text. A domain name can contain a domain and a top-level domain.
+
+Domain Names can be a little more of a pain for the attacker to change as they would most likely need to purchase the domain, register it and modify DNS records. Unfortunately for defenders, many DNS providers have loose standards and provide APIs to make it even easier for the attacker to change the domain.
+
