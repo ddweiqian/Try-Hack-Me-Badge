@@ -183,4 +183,15 @@ Example of SSDeep from VirusTotal:
 
 ![image](https://github.com/user-attachments/assets/4062f341-cf0f-41e3-a762-5555c823fcdb)
 
+# TTPs (Tough)
+It is not over yet. But good news, we made it to the final stage or the apex of the Pyramid of Pain! 
 
+TTPs stands for Tactics, Techniques & Procedures. This includes the whole [MITRE ATT&CK Matrix](https://attack.mitre.org/), which means all the steps taken by an adversary to achieve his goal, starting from phishing attempts to persistence and data exfiltration. 
+
+If you can detect and respond to the TTPs quickly, you leave the adversaries almost no chance to fight back. For, example if you could detect a [Pass-the-Hash](https://www.beyondtrust.com/resources/glossary/pass-the-hash-pth-attack) attack using Windows Event Log Monitoring and remediate it, you would be able to find the compromised host very quickly and stop the lateral movement inside your network. At this point, the attacker would have two options:
+
+1. Go back, do more research and training, reconfigure their custom tools
+2. Give up and find another target
+Option 2 definitely sounds less time and resource-consuming.
+
+# 
