@@ -130,8 +130,57 @@ Host artifacts are the traces or observables that attackers leave on the system,
 
 ![image](https://github.com/user-attachments/assets/463b0235-4496-44bf-83fd-b1fe4f31c61f)
 
-The files modified/dropped by the malicious actor:
+**The files modified/dropped by the malicious actor:**
 
 ![image](https://github.com/user-attachments/assets/17500754-2ae1-498d-8959-50daa7babb28)
+
+# Network Artifacts (Annoying)
+
+Network Artifacts also belong to the yellow zone in the Pyramid of Pain. This means if you can detect and respond to the threat, the attacker would need more time to go back and change his tactics or modify the tools, which gives you more time to respond and detect the upcoming threats or remediate the existing ones.
+
+A network artifact can be a user-agent string, C2 information, or URI patterns followed by the HTTP POST requests.An attacker might use a User-Agent string that hasn’t been observed in your environment before or seems out of the ordinary. The User-Agent is defined by [RFC2616](https://datatracker.ietf.org/doc/html/rfc2616#page-145) as the request-header field that contains the information about the user agent originating the request.
+
+Network artifacts can be detected in Wireshark PCAPs (file that contains the packet data of a network) by using a network protocol analyzer such as TShark or exploring IDS (Intrusion Detection System) logging from a source such as [Snort](https://www.snort.org/).
+
+HTTP POST requests containing suspicious strings:
+
+![image](https://github.com/user-attachments/assets/6d9af58f-ee60-450e-9581-b3ceca45affb)
+
+Let's use TShark to filter out the User-Agent strings by using the following command: 
+**tshark --Y http.request -T fields -e http.host -e http.user_agent -r analysis_file.pcap**
+
+![image](https://github.com/user-attachments/assets/304e1219-3554-4d92-965c-d583c09c52fc)
+
+These are the most common User-Agent strings found for the [Emotet Downloader Trojan](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/emotet-downloader-trojan-returns-in-force/)
+
+If you can detect the custom User-Agent strings that the attacker is using, you might be able to block them, creating more obstacles and making their attempt to compromise the network more annoying.
+
+# Tools (Challenging)
+
+Congratulations! We have made it to the challenging part for the adversaries!
+
+At this stage, we have levelled﻿ up our detection capabilities against the artifacts. The attacker would most likely give up trying to break into your network or go back and try to create a new tool that serves the same purpose. It will be a game over for the attackers as they would need to invest some money into building a new tool (if they are capable of doing so), find the tool that has the same potential, or even gets some training to learn how to be proficient in a certain tool. 
+
+Attackers would use the utilities to create malicious macro documents (maldocs) for spearphishing attempts, a backdoor that can be used to establish **C2 (Command and Control Infrastructure)**, any custom .EXE, and .DLL files, payloads, or password crackers.
+
+**A Trojan dropped the suspicious "Stealer.exe" in the Temp folder:**
+
+![image](https://github.com/user-attachments/assets/acefcadc-bd70-4608-8fd3-c011ee2c4721)
+
+The execution of the suspicious binary:
+
+![image](https://github.com/user-attachments/assets/a052e355-4f92-458a-abd1-d71860e3f66d)
+
+Antivirus signatures, detection rules, and YARA rules can be great weapons for you to use against attackers at this stage.
+
+[MalwareBazaar](https://bazaar.abuse.ch/) and [Malshare](https://malshare.com/) are good resources to provide you with access to the samples, malicious feeds, and YARA results - these all can be very helpful when it comes to threat hunting and incident response. 
+
+For detection rules, [SOC Prime Threat Detection Marketplace](https://tdm.socprime.com/signup) is a great platform, where security professionals share their detection rules for different kinds of threats including the latest CVE's that are being exploited in the wild by adversaries. 
+
+Fuzzy hashing is also a strong weapon against the attacker's tools. Fuzzy hashing helps you to perform similarity analysis - match two files with minor differences based on the fuzzy hash values. One of the examples of fuzzy hashing is the usage of [SSDeep](https://ssdeep-project.github.io/ssdeep/index.html); on the SSDeep official website, you can also find the complete explanation for fuzzy hashing. 
+
+Example of SSDeep from VirusTotal:
+
+![image](https://github.com/user-attachments/assets/4062f341-cf0f-41e3-a762-5555c823fcdb)
 
 
