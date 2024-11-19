@@ -35,3 +35,23 @@ As you might have noticed, it is really easy to spot a malicious file if we have
 Let’s take a look at an example of how you can change the hash value of a file by simply appending a string to the end of a file using **echo**: File Hash (Before Modification)
 
 ![image](https://github.com/user-attachments/assets/8bde1f53-dc5d-4a96-981e-894a39373ee7)
+
+# IP Address (Easy)
+
+An IP address is used to identify any device connected to a network. These devices range from desktops, to servers and even CCTV cameras! We rely on IP addresses to send and receive the information over the network. But we are not going to get into the structure and functionality of the IP address. As a part of the Pyramid of Pain, we’ll evaluate how IP addresses are used as an indicator.
+
+In the Pyramid of Pain, IP addresses are indicated with the color green. You might be asking why and what you can associate the green colour with?
+
+From a defense standpoint, knowledge of the IP addresses an adversary uses can be valuable. A common defense tactic is to block, drop, or deny inbound requests from IP addresses on your parameter or external firewall. This tactic is often not bulletproof as it’s trivial for an experienced adversary to recover simply by using a new public IP address.
+
+Malicious IP connections ([app.any.run](https://app.any.run/tasks/a66178de-7596-4a05-945d-704dbf6b3b90)):
+
+![image](https://github.com/user-attachments/assets/ddca5cc5-e7c3-4fc7-9a69-454ecac8f4fa)
+
+**NOTE!** Do not attempt to interact with the IP addresses shown above.
+
+One of the ways an adversary can make it challenging to successfully carry out IP blocking is by using Fast Flux.
+
+According to [Akamai](https://www.akamai.com/blog), Fast Flux is a DNS technique used by botnets to hide phishing, web proxying, malware delivery, and malware communication activities behind compromised hosts acting as proxies. The purpose of using the Fast Flux network is to make the communication between malware and its command and control server (C&C) challenging to be discovered by security professionals. 
+
+So, the primary concept of a Fast Flux network is having multiple IP addresses associated with a domain name, which is constantly changing. Palo Alto created a great fictional scenario to explain Fast Flux: "[Fast Flux 101: How Cybercriminals Improve the Resilience of Their Infrastructure to Evade Detection and Law Enforcement Takedowns](https://unit42.paloaltonetworks.com/fast-flux-101/)"
