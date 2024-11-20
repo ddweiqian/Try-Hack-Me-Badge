@@ -54,6 +54,8 @@ We will follow the Cyber kill Chain Model and map the attacker's activity in eac
 
 During our investigation, we will be using **Splunk** as our SIEM solution. Logs are being ingested from webserver/firewall/Suricata/Sysmon etc. In the data summary tab, we can explore the log sources showing visibility into both network-centric and host-centric activities. To get the complete picture of the hosts and log sources being monitored in an organization, please click on the **Data summary** and navigate the available tabs to get the information.
 
+https://github.com/user-attachments/assets/dbe92fe6-7230-4fc4-8617-2e86510910cd
+
 **Interesting log Sources**
 Some of the interesting log sources that will help us in our Investigation are:
 
