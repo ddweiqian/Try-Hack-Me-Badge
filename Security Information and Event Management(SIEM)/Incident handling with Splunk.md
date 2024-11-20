@@ -56,7 +56,7 @@ During our investigation, we will be using **Splunk** as our SIEM solution. Logs
 
 https://github.com/user-attachments/assets/dbe92fe6-7230-4fc4-8617-2e86510910cd
 
-**Interesting log Sources**
+### Interesting log Sources
 Some of the interesting log sources that will help us in our Investigation are:
 
 ![image](https://github.com/user-attachments/assets/eb29807e-7f98-4251-9702-370897094884)
