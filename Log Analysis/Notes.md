@@ -398,3 +398,34 @@ You can now access the parsed and consolidated log file through the [Log Viewer]
 
 **NOTE**: You can access the URL using the AttackBox or VM browser. However, please be aware that Firefox on the VM may take a few minutes to boot up
 
+# Conclusion
+Congratulations! You've completed the Intro to Logs room.
+
+In summary, we were able to learn and perform the following:
+
+- The significance of logs as records of past activities; essential for pinpointing and tackling threats.
+- Delve into an array of logs, their creation techniques, and the methods of gathering them from diverse systems.
+- Review the results from analysing logs in the realms of detection engineering and incident handling.
+- Acquire practical skills in identifying and countering adversaries via log analysis.
+If you enjoyed this room, continue learning and developing proficiency in areas specific to Security Operations and Incident Response tooling, which may enhance your log analysis and overall Blue Teaming skills such as the following:
+
+**Endpoint Detection and Response (EDR)**
+- [Intro to Endpoint Security](https://tryhackme.com/r/room/introtoendpointsecurity)
+- [Aurora EDR](https://tryhackme.com/r/room/auroraedr)
+- [Wazuh](https://tryhackme.com/r/room/wazuhct)
+
+**Intrusion Detection and Prevention Systems (IDPS)**
+- [Snort](https://tryhackme.com/r/room/snort)
+- [Snort Challenge - The Basics](https://tryhackme.com/r/room/snortchallenges1)
+- [Snort Challenge - Live Attacks] (https://tryhackme.com/r/room/snortchallenges2)
+
+**Security Information and Event Management (SIEM)**
+- [Investigating with ELK 101](https://tryhackme.com/r/room/investigatingwithelk101)
+- [Splunk: Basics](https://tryhackme.com/r/room/splunk101)
+- [Incident handling with Splunk](https://tryhackme.com/r/room/splunk201)
+
+Recognising that these security tools truly flourish in the hands of skilled individuals with the necessary information and technical expertise to combat potential threats and manage security incidents is vital.
+
+## Next Steps
+
+As we conclude, we hope this exploration has instilled in you the importance and potential of logs. Now that you've comprehensively understood what logs are, why logging matters and how logging is performed, it's time to proceed to the next room, [Log Operations](https://tryhackme.com/r/room/logoperations). May you harness this knowledge to fortify defences, detect adversaries, and drive your cyber security endeavours forward.
