@@ -26,17 +26,21 @@ This information is typically stored in a log file, which aggregates entries of 
 A single log entry may seem minor on its own. However, when log data is aggregated, analyzed, and cross-referenced with other information sources, it becomes a powerful investigative tool. Logs can provide answers to critical questions about an event, such as:
 
 1. What happened?
-
+   Answer : An adversary was confirmed to have accessed SwiftSpend Financial's GitLab instance.
 2. When did it happen?
-
+   Answer: Access started at 22:10 on Wednesday, September 8th, 2023.
 3. Where did it happen?
-
+   Answer: The event originated from a device with an IP address of 10.10.133.168 within the VPN Users' segment (10.10.133.0/24).
 4. Who is responsible?
-
+   Answer: Upon examining the network logs, it was observed that the device, identified by the User-Agent "Mozilla/5.0 (X11;     
+   Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0", was allocated the IP address 10.10.133.168.
 5. Were their actions successful?
-
+   Answer: Yes, since an API Key was found to be publicly exposed on the GitLab instance. Moreover, the web proxy logs confirm that 
+   the adversary device reached gitlab.swiftspend.finance and maintained access through their uploaded web shell.
 6. What was the outcome of their actions?
-
+    Answer: The adversary achieved remote code execution on gitlab.swiftspend.finance and performed post-exploitation activities.
+   
+The example above emphasises how logs are instrumental in piecing together a complete picture of an event, thereby enhancing our understanding and ability to respond effectively.
 # What logs : Types, Formats and Standards
 
 ## Log Types
@@ -150,19 +154,22 @@ This foundational step ensures that a security analyst has a comprehensive data 
 
 By following these steps, people can ensure effective log collection and accurate log analysis.
 
+**IMPORTANT**: Please be aware that NTP-based time synchronisation may not be possible to replicate with the VM since it has no internet connectivity. However, when performing this in practice, using pool.ntp.org to find an NTP server is best. Time synchronisation can be performed automatically on Linux-based systems or manually initiated by executing. **ntpdate pool.ntp.org**.
+![image](https://github.com/user-attachments/assets/5dc9ca9b-9dd3-443c-8199-9a1d081604cc)
+
 ## Log Management
 
 Effective Log Management ensures that all collected logs are securely stored, systematically organized, and readily accessible. A hybrid approach, balancing comprehensive log retention with selective pruning, can provide an optimal solution.
 
 After gathering your logs, managing them effectively is crucial. Follow these steps to achieve this:
 
-1. Storage: Choose a secure storage solution, considering factors such as retention periods and accessibility.
+1. **Storage**: Choose a secure storage solution, considering factors such as retention periods and accessibility.
 
-2. Organization: Classify logs by their source, type, or other criteria to facilitate easier access.
+2. **Organization: Classify logs by their source, type, or other criteria to facilitate easier access.
 
-3. Backup: Regularly back up your logs to prevent data loss.
+3. **Backup**: Regularly back up your logs to prevent data loss.
 
-4. Review: Periodically review logs to ensure they are properly stored and categorized.
+4. **Review**: Periodically review logs to ensure they are properly stored and categorized.
 
 ## Log Centralization
 
@@ -170,13 +177,13 @@ Centralization is essential for quick log access, thorough analysis, and rapid i
 
 Here’s a streamlined process for achieving log centralization:
 
-1. Choose a Centralized System: Opt for a platform that consolidates logs from all sources using SIEM, such as the Elastic Stack or Splunk.
+1. **Choose a Centralized System**: Opt for a platform that consolidates logs from all sources using SIEM, such as the Elastic Stack or Splunk.
 
-2. Integrate Sources: Connect all your log sources to the centralized system.
+2. **Integrate Sources**: Connect all your log sources to the centralized system.
 
-3. Set Up Monitoring: Use tools that provide real-time monitoring and alerts for specific events.
+3. **Set Up Monitoring**: Use tools that provide real-time monitoring and alerts for specific events.
 
-4. Integrate with Incident Management: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
+4. **Integrate with Incident Management**: Ensure your centralized system can seamlessly integrate with incident management tools or protocols.
 
 
 ## Usecase Activity: Log Collection with rsyslog
