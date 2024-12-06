@@ -417,7 +417,7 @@ If you enjoyed this room, continue learning and developing proficiency in areas 
 **Intrusion Detection and Prevention Systems (IDPS)**
 - [Snort](https://tryhackme.com/r/room/snort)
 - [Snort Challenge - The Basics](https://tryhackme.com/r/room/snortchallenges1)
-- [Snort Challenge - Live Attacks] (https://tryhackme.com/r/room/snortchallenges2)
+- [Snort Challenge - Live Attacks](https://tryhackme.com/r/room/snortchallenges2)
 
 **Security Information and Event Management (SIEM)**
 - [Investigating with ELK 101](https://tryhackme.com/r/room/investigatingwithelk101)
