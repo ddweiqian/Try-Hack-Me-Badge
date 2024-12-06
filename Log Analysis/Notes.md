@@ -187,6 +187,27 @@ Here’s a streamlined process for achieving log centralization:
 
 
 ## Usecase Activity: Log Collection with rsyslog
+
+This activity aims to introduce **rsyslog** and demonstrate how it can enhance the centralisation and management of logs. As part of the collection process, we will configure **rsyslog** to log all sshd messages to a specific file, such as **/var/log/websrv-02/rsyslog_sshd.log**. The steps below can be followed to achieve this:
+
+1. **Open a Terminal**.
+2. **Ensure rsyslog is Installed**: You can check if rsyslog is installed by running the command: **sudo systemctl status rsyslog**
+3. **Create a Configuration File**: Use a text editor to create the following configuration file: **gedit /etc/rsyslog.d/98-websrv-02-sshd.conf**, **nano /etc/rsyslog.d/98-websrv-02-sshd.conf**, **vi /etc/rsyslog.d/98-websrv-02-sshd.conf**, or **vim /etc/rsyslog.d/98-websrv-02-sshd.conf**.
+4. **Add the Configuration**: Add the following lines in **/etc/rsyslog.d/98-websrv-02-sshd.conf** to direct the sshd messages to the specific log file:
+   
+**$FileCreateMode 0644**
+**:programname, isequal, "sshd" /var/log/websrv-02/rsyslog_sshd.log**
+
+5. **Save and Close the Configuration File**.
+6. **Restart rsyslog**: Apply the changes by restarting rsyslog with the command: **sudo systemctl restart rsyslog**
+7. **Verify the Configuration**: You can verify the configuration works by initiating an SSH connection to localhost via **ssh localhost** or by checking the log file after a minute or two.
+
+![image](https://github.com/user-attachments/assets/392203d2-2a33-448c-84dc-dccebc7da201)
+
+**IMPORTANT**: If remote forwarding of logs is not configured, tools such as **scp** / **rsync**, among others, can be utilised for the manual collection of logs.
+
+**More Reference**:
+
 [How to Set Up Centralized Logging on Linux with rsyslog](https://betterstack.com/community/guides/logging/how-to-configure-centralised-rsyslog-server/)
 
 [Centralized Log Collection Using Rsyslog](https://medium.com/curious-dev-grail/centralized-log-collection-using-rsyslog-1be6d6e9747f)
@@ -198,30 +219,33 @@ Here’s a streamlined process for achieving log centralization:
 Logs can be stored in various locations, such as the local system generating them, a centralized repository, or cloud-based storage.
 
 ### Factors Influencing Log Storage Location:
+Logs can be stored in various locations, such as the local system that generates them, a centralised repository, or cloud-based storage.
 
-1. Security Requirements: Ensuring logs comply with organizational or regulatory security protocols.
+The choice of storage location typically depends on multiple factors:
 
-2. Accessibility Needs: How quickly and by whom the logs need to be accessed.
+1. **Security Requirements**: Ensuring logs comply with organizational or regulatory security protocols.
 
-3. Storage Capacity: The volume of logs generated may require significant storage space.
+2. **Accessibility Needs**: How quickly and by whom the logs need to be accessed.
 
-4. Cost Considerations: Budget constraints may influence the choice between cloud-based or local solutions.
+3. **Storage Capacity**: The volume of logs generated may require significant storage space.
 
-5. Compliance Regulations: Industry-specific regulations governing log storage.
+4. **Cost Considerations**: Budget constraints may influence the choice between cloud-based or local solutions.
 
-6. Retention Policies: Required retention time and ease of retrieval.
+5. **Compliance Regulations**: Industry-specific regulations governing log storage.
 
-7. Disaster Recovery Plans: Ensuring log availability even in case of system failure.
+6. **Retention Policies**: Required retention time and ease of retrieval.
+
+7. **Disaster Recovery Plans**: Ensuring log availability even in case of system failure.
 
 ## Log Retention
 
 Recognizing that log storage is finite, it's crucial to balance retaining logs for potential future needs and storage costs. Understanding Hot, Warm, and Cold storage concepts aids in this decision-making:
 
-1. Hot Storage: Most accessible logs from the past 3-6 months, with near real-time query speeds.
+1. **Hot Storage**: Most accessible logs from the past **3-6 months**, with near real-time query speeds.
 
-2. Warm Storage: Logs from six months to 2 years, acting as a data lake, easily accessible but not as immediate as Hot storage.
+2. **Warm Storage**: Logs from **six months to 2 years**, acting as a data lake, easily accessible but not as immediate as Hot storage.
 
-3. Cold Storage: Archived or compressed logs from 2-5 years, not easily accessible and used for retroactive analysis or scoping.
+3. **Cold Storage**: Archived or compressed logs from **2-5 years**, not easily accessible and used for retroactive analysis or scoping.
 
 Managing log storage costs is critical for organizations, and selecting appropriate Hot, Warm, or Cold storage strategies can help keep these costs in check.
 
@@ -230,6 +254,9 @@ Managing log storage costs is critical for organizations, and selecting appropri
 Carefully delete logs to avoid removing valuable ones. Always back up crucial log files before deletion.
 
 ### Importance of a Well-Defined Deletion Policy:
+Log deletion must be performed carefully to avoid removing logs that could still be of value. The backup of log files, especially crucial ones, is necessary before deletion.
+
+It is essential to have a well-defined deletion policy to ensure compliance with data protection laws and regulations. Log deletion helps to:
 
 1. Maintain manageable log size for analysis.
 
@@ -250,6 +277,18 @@ Carefully delete logs to avoid removing valuable ones. Always back up crucial lo
 5. Regular backups, especially before deletion.
 
 ### Usecase Activity: Log Management with logrotate
+This activity aims to introduce **logrotate**, a tool that automates log file rotation, compression, and management, ensuring that log files are handled systematically. It allows automatic rotation, compression, and removal of log files. As an example, here's how we can set it up for **/var/log/websrv-02/rsyslog_sshd.log**:
+
+1. **Create a Configuration File**: **sudo gedit /etc/logrotate.d/98-websrv-02_sshd.conf**, **sudo nano /etc/logrotate.d/98-websrv-02_sshd.conf**, **sudo vi /etc/logrotate.d/98-websrv-02_sshd.conf**, or **sudo vim /etc/logrotate.d/98-websrv-02_sshd.conf**
+
+2. **Define Log Settings**:
+![image](https://github.com/user-attachments/assets/c6ffd852-71de-4643-9a5c-039fd650f44c)
+
+3. **Save and Close the file**.
+4. Manual Execution: **sudo logrotate -f /etc/logrotate.d/98-websrv-02_sshd.conf**
+![image](https://github.com/user-attachments/assets/c45ace27-3151-4e4e-8a8a-436dee0be346)
+
+**More Reference**
 
 [A Complete Guide to Managing Log Files with Logrotate](https://betterstack.com/community/guides/logging/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04/)
 
