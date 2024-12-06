@@ -331,32 +331,70 @@ Visualization represents log data in graphical formats like charts, graphs, or h
 Reporting summarizes log data into structured formats to provide insights, support decision-making, or meet compliance requirements. Effective reporting includes creating clear and concise log data summaries for stakeholders.
 
 ## Log Analysis Tools
-For complex log analysis tasks, Security Information and Event Management (SIEM) tools such as Splunk or Elastic Search are used. In scenarios requiring immediate data analysis, tools like cat, grep, sed, sort, uniq, and awk on Linux-based systems, and [EZ-Tools](https://ericzimmerman.github.io/#!index.md) and Get-FileHash on Windows-based systems, are valuable. Proper acquisition includes hashing log files during collection to ensure admissibility in court.
+For complex log analysis tasks, Security Information and Event Management (SIEM) tools such as Splunk or Elastic Search are used. 
+
+In scenarios requiring immediate data analysis, tools like **cat, grep, sed, sort, uniq, and awk** on Linux-based systems, along with **sha256sum** for hashing log files. [EZ-Tools](https://ericzimmerman.github.io/#!index.md) and **Get-FileHash** on Windows-based systems, are valuable. Proper acquisition includes log file' **hashing during collection**  to ensure admissibility in court.
+
+Therefore, it is imperative not only to log events but also to ensure their integrity, that they are analysed, and any lessons obtained from the logs be learned, as the safety and efficiency of an organisation can depend on them.
 
 ## Log Analysis Techniques
 
 Log analysis techniques are methods used to interpret and derive insights from log data. They range from simple to complex and include:
 
-1. Pattern Recognition: Identifying recurring sequences or trends.
+1. **Pattern Recognition**: This involves identifying recurring sequences or trends in log data. It can detect regular system behaviour or identify unusual activities that may indicate a security threat.
 
-2. Anomaly Detection: Spotting data points that deviate from the norm.
+2. **Anomaly Detection**:  Anomaly detection focuses on identifying data points that deviate from the expected pattern. It is crucial to spot potential issues or malicious activities early on.
 
-3. Correlation Analysis: Understanding relationships between events.
+3. **Correlation Analysis**: Correlating different log entries helps understand the relationship between various events. It can reveal causation and dependencies between system components and is vital in root cause analysis.
 
-4. Timeline Analysis: Monitoring trends and behaviors over time.
+4. **Timeline Analysis**:  Analysing logs over time helps understand trends, seasonalities, and periodic behaviours. It can be essential for performance monitoring and forecasting system loads.
 
-5. Machine Learning and AI: Enhancing log analysis techniques like classification and enrichment.
+5. **Machine Learning and AI**: Leveraging machine learning models can automate and enhance various log analysis techniques, such as classification and enrichment. AI can provide predictive insights and help in automating responses to specific events.
 
-6. Visualization: Using graphs and charts for intuitive data representation.
+6. **Visualization**: Representing log data through graphs and charts allows for intuitive understanding and quick insights. Visualisation can make complex data more accessible and assist in identifying key patterns and relationships.
 
-7. Statistical Analysis: Applying quantitative methods for data-driven decisions.
+7. **Statistical Analysis**: Using statistical methods to analyse log data can provide quantitative insights and help make data-driven decisions. Regression analysis and hypothesis testing can infer relationships and validate assumptions.
+
+These techniques can be applied individually or in combination, depending on the specific requirements and complexity of the log analysis task. Understanding and using these techniques can significantly enhance the effectiveness of log analysis, leading to more informed decisions and robust security measures.
 
 ### Working with Logs: Usecase Application
 
 Handling logs requires both comprehension and data manipulation. This includes two approaches:
 
-Unparsed Raw Logs: Accessed directly via open-source [Log Viewer](https://github.com/sevdokimov/log-viewer) tools, suitable for quick inspections without preprocessing.
+**Unparsed Raw Logs**: Accessed directly via open-source [Log Viewer](https://github.com/sevdokimov/log-viewer) tools, suitable for quick inspections without preprocessing, which is ideal for quick inspections or preserving the original format.
 
-Parsed and Consolidated Logs: Using Unix tools like cat, grep, sed, sort, uniq, and awk to create a standardized file, offering a clear and efficient data view through the [Log Viewer](https://github.com/sevdokimov/log-viewer) tool.
+**Parsed and Consolidated Logs**: Using Unix tools like **cat, grep, sed, sort, uniq**, and **awk** to create a standardized file, offering a clear and efficient data view through the [Log Viewer](https://github.com/sevdokimov/log-viewer) tool, this consolidated file offers a clear and efficient view of the data, aiding in identifying patterns and issues.
 
 These methods highlight the flexibility and importance of log analysis in system diagnostics and cybersecurity, ensuring the safety and efficiency of an organization.
+
+### Unparsed Raw Log Files
+
+When dealing with raw log files, you can access them directly through the Log Viewer tool by specifying the paths in the URL. Here's an example URL that includes multiple log files:
+![image](https://github.com/user-attachments/assets/f330c410-c9b7-48cc-8a58-7e9dee87c0c9)
+
+Paste this URL into your browser to view the unparsed raw log files using the [Log Viewer](https://github.com/sevdokimov/log-viewer) tool.
+
+**NOTE**: You can access the URL using the AttackBox or VM browser. However, please be aware that Firefox on the VM may take a few minutes to boot up.
+
+### Parsed and Consolidated Log File
+To create a parsed and consolidated log file, you can use a combination of Unix tools like **cat, grep, sed, sort, uniq**, and **awk**. Here's a step-by-step guide:
+
+1. Use **awk** and **sed** to normalize the log entries to the desired format. For this example, we will sort by date and time:
+![image](https://github.com/user-attachments/assets/2813b1c2-2a7c-415d-854d-62c8e522e396)
+
+2. **Optional**: Use **grep** to filter specific entries:
+![image](https://github.com/user-attachments/assets/a5517ddc-13fc-48b2-a38a-3566f73b0181)
+
+3. Use **sort** to sort all the log entries by date and time:
+![image](https://github.com/user-attachments/assets/193f38cc-5658-4265-88ec-d6c7615c372e)
+
+4. Use **uniq** to remove duplicate entries:
+![image](https://github.com/user-attachments/assets/f0914015-b720-4e89-8432-648871675d3a)
+
+You can now access the parsed and consolidated log file through the [Log Viewer](https://github.com/sevdokimov/log-viewer) using the following URL:
+![image](https://github.com/user-attachments/assets/f9d47c60-4b5d-40a0-90bc-b26cd54181d8)
+
+![image](https://github.com/user-attachments/assets/34e98d3c-067e-4fdf-b5b0-9c5c3c421fdb)
+
+**NOTE**: You can access the URL using the AttackBox or VM browser. However, please be aware that Firefox on the VM may take a few minutes to boot up
+
