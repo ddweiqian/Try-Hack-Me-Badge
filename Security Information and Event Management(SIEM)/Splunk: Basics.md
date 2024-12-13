@@ -11,7 +11,7 @@ Splunk has three main components, namely Forwarder, Indexer, and Search Head. Th
 Splunk Forwarder is a lightweight agent installed on the endpoint intended to be monitored, and its main task is to collect the data and send it to the Splunk instance. It does not affect the endpoint's performance as it takes very few resources to process. Some of the key data sources are:
 
 - Web server generating web traffic.
--bWindows machine generating Windows Event Logs, PowerShell, and Sysmon data.
+- Windows machine generating Windows Event Logs, PowerShell, and Sysmon data.
 - Linux host generating host-centric logs.
 - Database generating DB connection requests, responses, and errors.
 - Splunk Forwarder
